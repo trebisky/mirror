@@ -1,1 +1,4 @@
 shm
+db_fix
+*.o
+database
