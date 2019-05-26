@@ -2,3 +2,6 @@ shm
 db_fix
 *.o
 database
+database.*
+zz
+zzz

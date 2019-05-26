@@ -19,5 +19,9 @@ DB_OBJ = db_fix.o fix_oven.o
 db_fix:	$(DB_OBJ)
 	$(CC) -o db_fix $(DB_OBJ)
 
+install: all
+	cp shm /home/tom/bin
+	cp db_fix /home/tom/bin
+
 clean:
 	rm -f shm db_fix
