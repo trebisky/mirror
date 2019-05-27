@@ -122,3 +122,40 @@ src/oven/init.c
 
 After this I made some changes to shmalloc.c to give better error messages.
 
+======================================================================================================
+
+What I am doing, now that this is under git, is to keep this off to the side (not in the
+iraf directory tree).  Building "off to the side" seems to work just fine.
+Then I commit afte a successful build and I can use git clone to distribute the
+package to /iraf/iraf/extern/mirror on any and all machines that need it.
+
+As discussed elsewhere, I set up a special user "irafdude" with a tcsh login shell and the
+environment settings discussed above, just to build this package.  As myself (user "tom")
+I want nothing to do with the csh or special environment settings.  Your mileage may differ.
+
+There are some ownership issues doing this.  I chown -R to "irafdude" to build, then chown -R
+back to "tom" to commit to git.  Mildly awkward, but gets things done.
+It doesn't much matter who owns the files in /iraf/iraf/extern as long as you don't intend
+to build.
+
+So, to deploy this:
+
+cd /iraf/iraf/extern
+git clone https://github.com/trebisky/Oven.git
+ln -s Oven/mirror mirror
+
+You get some bonus items in Oven/utils
+
+======================================================================================================
+
+The add the endian fixing byte swapping, the following files get messed with
+
+src/oven/database.c -- gets modified
+src/oven/fix_oven.c -- is entirely new
+src/oven/mkpkg -- gets a line for fix_oven.c
+
+The new code in database.c is under the LINUX_ENDIAN conditional.
+
+======================================================================================================
+THE END
+======================================================================================================

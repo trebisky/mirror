@@ -12,6 +12,7 @@ libpkg.a:
 	context.c	oven.h menus.h context.h global.h
 	databasc.c	oven.h menus.h context.h global.h
 	database.c	oven.h menus.h context.h global.h
+	fix_oven.c	oven.h
 	datalogger.c	oven.h menus.h context.h global.h
 	domenus.c	<libc/libc.h> <libc/stdio.h> <libc/spp.h> \
 			oven.h menus.h context.h global.h mcodes.h
