@@ -1,0 +1,5 @@
+.help revisions Feb00 mirror
+.nf
+ 1 May 1991	New Release
+ 9 May 1992	Package Reorganization
+10 Feb 2000	Fix Y2K problems in minutes.x

@@ -1,0 +1,39 @@
+$checkout libpkg.a ../
+$update   libpkg.a
+$checkin  libpkg.a ../
+$exit
+
+libpkg.a:
+	@menusc
+	@menusm
+	automkey.c
+	backup.x
+	cache.c		oven.h menus.h context.h global.h
+	context.c	oven.h menus.h context.h global.h
+	databasc.c	oven.h menus.h context.h global.h
+	database.c	oven.h menus.h context.h global.h
+	datalogger.c	oven.h menus.h context.h global.h
+	domenus.c	<libc/libc.h> <libc/stdio.h> <libc/spp.h> \
+			oven.h menus.h context.h global.h mcodes.h
+	errorreport.c	oven.h menus.h context.h global.h errnum.h errmes.h
+	lgdata.x	<imhdr.h> <time.h>
+	logdata.c	<libc/spp.h>
+	hgkey.x		<chars.h>
+	hoven.c
+	init.c		oven.h menus.h context.h global.h
+	ipportrw.c
+	prints.c	oven.h
+	scans.c		oven.h
+	shmalloc.c
+	stale.c		oven.h
+	t_hoven.x
+	util.c		oven.h
+	;
+
+menus:
+	@menust
+	;
+
+makemenus:
+	@menusk
+	;

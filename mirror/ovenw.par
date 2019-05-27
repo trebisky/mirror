@@ -1,0 +1,7 @@
+
+# OVENW.PAR - Parameter file for OVENW.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+period,i,h,60,0,86400,Polling period (seconds)
+offset,i,h,15,0,86400,Delay after period (seconds)
+mode,s,h,ql,,,

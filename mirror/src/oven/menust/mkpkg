@@ -1,0 +1,5 @@
+menus:
+	$ifeq (HOSTID, unix)
+		!$(mirror)/bin$(arch)/makemenus.e ../menus/*
+	$endif
+	;

@@ -1,0 +1,345 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+tcido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcloi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcloo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcsni (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcsno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcofi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcofo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcstt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcsto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcigt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcigo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctyg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctyi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctyo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctjg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctjo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctng ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcttg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctvg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctvo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tctso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcsag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcsao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcssg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcsso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcdag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcdao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcdsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcdso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcnhg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcnhi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcnho (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcnn ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+tcnfg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcnfi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcnfo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tcfn ()
+{
+	int	n = 0;
+
+	return (n);
+}

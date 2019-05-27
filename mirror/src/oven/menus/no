@@ -1,0 +1,19 @@
+Zone $id                                         %
+Node Label          $nl                          ?
+Rate (C/hr)         $rt                          ?
+Deviation           $dv                          ?
+TDeviation          $td                          ?
+Goal  Temperature   $gt                          ?
+Goal  Clock Time    $gc                          ?
+Delta Temperature   $dt                          ?
+Delta Clock Time    $dc                          ?
+Wait on Tolerance   $wt                          &
+Wait on Deviation   $wd                          &
+Wait on Zone/Node   $ww                          &
+Wait on Zone ID     $wz                          ?
+Wait on Node Label  $wn                          ?
+Proportional Coef.  $np                          ?
+Integral     Coef.  $ni                          ?
+Derivative   Coef.  $nd                          ?
+Integral Depth      $nh                          ?
+Power Limit         $nq                          ?

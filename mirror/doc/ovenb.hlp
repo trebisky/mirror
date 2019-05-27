@@ -1,0 +1,31 @@
+.help ovenb May91 mirror
+.ih
+NAME
+ovenb -- Oven bi-parameter daemon
+.ih
+USAGE
+ovenb
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ih
+DESCRIPTION
+	The \fInoven\fR and \fIncomp\fR parameters are ignored. 
+This task attaches
+all the oven shared memory segments that exist when the task starts up.
+This is for all ovens and all V computers.  The task listens for requests
+on a well-known TCP port and transmits the contents of the appropriate shared
+memory bi-parameter database to the requester.
+.ih
+EXAMPLES
+	cl> ovenb &
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

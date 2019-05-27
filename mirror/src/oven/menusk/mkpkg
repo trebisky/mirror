@@ -1,0 +1,5 @@
+makemenus:
+	$omake	makemenus.c
+	$link	-h makemenus.o -o makemenus.e
+	$move	makemenus.e mirror$bin/makemenus.e
+	;

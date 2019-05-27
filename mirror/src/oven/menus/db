@@ -1,0 +1,9 @@
+Database
+Read  parameters from disk    %rf      $
+Write parameters to   disk    %wf      $
+Read  parameters from oven    %ro      $
+Write parameters to   oven    %wo      $
+Read  data       from oven    %rd      $
+Read  errors     from oven    %re      $
+Write parameters to   text    %wt      $
+Read  parameters from text    %rt      $

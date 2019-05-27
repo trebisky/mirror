@@ -1,0 +1,13 @@
+Analog Limits
+Voltage Upper Limits
+$vu                          ?
+!uv
+Voltage Lower Limits
+$vl                          ?
+!lv
+Current Upper Limits
+$cu                          ?
+!uc
+Current Lower Limits
+$cl                          ?
+!lc

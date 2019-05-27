@@ -1,0 +1,11 @@
+Power Panel Fase    $id                          %
+Address             $ad                          %
+Fase Epsilon        $fe                          ?
+Fase Max Load       $fm                          ?
+PP Sensor Status    %ps                          %
+Analog Data
+%fa                                                                            %
+
+Heater Elements
+%he                                              &
+!ne

@@ -1,0 +1,39 @@
+Heater Circuit      $id                          %
+Location            $lo                          ?
+Radius limits       $rl                          ?
+Theta  limits       $tl                          ?
+Z      limits       $zl                          ?
+Address             $ad                          %
+Voltage Sensor      $vs                          &
+L. Current Sensor   $cs                          &
+R. Current Sensor   $rs                          &
+Heater Status       $st                          &
+Heater Ignore       $ig                          &
+Control Zone        %zo                          ?
+Beam Number         $bm                          ?
+Twistlock Number    $tw                          ?
+Heater Error Check  $er                          &
+Zone Heater Err Chk %zr                          %
+Heater Temperature  $ht                          %
+Sched. Temperature  %et                          %
+Temperature Error   $pe                          %
+Sched. Deviation    %ed                          %
+Sched. TDeviation   %td                          %
+Integral Depth      %ip                          %
+PID Term              Error   Coefficient       Product
+Proportional        %pi                               % 
+Integral            %ii                               % 
+Derivative          %di                               % 
+Power Limit                              %pl % 
+Requested Power                          $hp % 
+Fase Epsilon        %fe                          %
+Fase Max Load       %fm                          %
+PP Sensor Status    %ps                          %
+Analog Data
+%ha                                                                            %
+Near neighbor TC   
+%nh                          ?
+!nn
+Far  neighbor TC   
+%nf                          ?
+!fn

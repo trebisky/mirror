@@ -1,0 +1,38 @@
+.help ovend May91 mirror
+.ih
+NAME
+ovend -- Oven data gatherer and logger
+.ih
+USAGE
+ovend
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls logdata = yes
+If \fIlogdata\fR is no, just place the data into the shared memory segment
+and do not write the data into the IRAF data files onto disk.
+.le
+.ls period = 60
+The period in seconds with which the data is polled.
+.le
+.ls offset = 5
+The number of seconds to wait after the period has expired.
+.le
+.ih
+DESCRIPTION
+	Poll the V computer every period and place the oven data into
+the shared memory segment.  If enabled, write the data into the IRAF
+data files on disk.
+.ih
+EXAMPLES
+	cl> ovend &
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

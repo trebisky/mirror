@@ -1,0 +1,15 @@
+TC Polynomials      $id                          %
+Sensor type         $ty                          %
+
+
+Measurement Temperature       (C/mv)
+                    $mt                          ?
+!nm
+
+Compensation Voltage          (mv/C)
+                    $cv                          ?
+!nc
+
+Junction    Temperature       (C/mv)
+                    $jt                          ?
+!nj

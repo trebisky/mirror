@@ -1,0 +1,33 @@
+.help ovenw May91 mirror
+.ih
+NAME
+ovenw -- Oven wait task
+.ih
+USAGE
+ovenw
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls period = 60
+The period in seconds with which the priority error database is polled.
+.le
+.ls offset = 15
+The number of seconds to wait after the period has expired.
+.le
+.ih
+DESCRIPTION
+	Just wait for the specified period and offset.  Parameters \fInoven\fR
+and \fIncomp\fR are ignored.
+.ih
+EXAMPLES
+	cl> ovenw &
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

@@ -1,0 +1,297 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+noido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonli (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+norti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+norto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nodvi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nodvo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+notdi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+notdo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nogti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nogto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nogci (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nogco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nodti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nodto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nodci (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nodco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowtt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowdt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowdo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowwt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowwo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowzi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowzo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowni (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nowno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonpi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonii (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonio (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nondi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nondo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonhi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonho (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonqi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+nonqo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}

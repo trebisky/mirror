@@ -1,0 +1,29 @@
+Thermocouple        $id                          %
+Location            $lo                          ?
+Address             $ad                          %
+Temperature         $tp                          %
+Serial number       $sn                          ?
+Offset              $of                          ?
+Status              $st                          &
+Ignore              $ig                          &
+Type                %ty                          ?
+
+TIC ij block        %tj                          %
+TIC serial          %tn                          %
+TIC address         %ta                          %
+TIC junc temp       %tt                          %
+TIC ref volt        %tv                          %
+TIC status          %ts                          %
+
+SB  address         %sa                          %
+SB  status          %ss                          %
+
+DCU address         %da                          %
+DCU status          %ds                          %
+
+Near neighbor of HE
+%nh                                    ?
+!nn
+Far  neighbor of HE
+%nf                                    ?
+!fn

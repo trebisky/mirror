@@ -1,0 +1,32 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+aaexg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+aacsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+aaerg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+aadbg ()
+{
+	int	t = 0;
+
+	return (t);
+}

@@ -1,0 +1,20 @@
+# ODISP.PAR - Parameter file for ODISP, for displaying temp and power images.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+information,s,h,ttmp,"hpwr|htmp|ttmp",,information: "hpwr|htmp|ttmp"
+aspect,s,h,base,"base|lid|wall|mold|alum",,aspect: "base|lid|wall|mold|alum"
+date,i,h,INDEF,000101,991231,date (yymmdd); INDEF for current
+time,i,h,INDEF,0,2359,time (hhmm); INDEF for latest
+display,b,h,yes,,,display image?
+frame,i,h,1,1,4,frame to be written into
+auto,b,h,yes,,,auto-scale intensities?
+z1,r,h,INDEF,,,intensity value to be black
+z2,r,h,INDEF,,,intensity value to be white
+showtc,b,h,no,,,show thermocouple locations?
+interpolate,b,h,no,,,interpolate heater information to form a smooth image?
+order,i,h,0,0,1,"spatial interpolator order (0 = replicate, 1 = linear)"
+searchdir,s,h,"",,,search list of directories to find data files
+datadir,s,h,"uparm$",,,directory in which to write image files
+silent,b,h,yes,,,don't report min/max values
+debug,b,h,no,,,
+mode,s,h,ql,,,

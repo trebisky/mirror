@@ -1,0 +1,11 @@
+# imagemask library
+
+$checkout  libpkg.a  ../
+$update    libpkg.a
+$checkin   libpkg.a  ../
+$exit
+
+libpkg.a:
+	make_mask.x    <math.h> "../odisp/odisp.h" "../odisp/tc_he.h" "../odisp/tc_he_bounds.h" "../xytran/tran.h" "mask.h" "map.com" "mask.com" "../odisp/debugd.com"
+	read_map.x     <math.h> "../odisp/tc_he.h" "map.com" "../odisp/debugd.com"
+	;

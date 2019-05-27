@@ -1,0 +1,12 @@
+# xytran library
+
+$checkout   libpkg.a   ../
+$update     libpkg.a
+$checkin    libpkg.a   ../
+$exit
+
+libpkg.a:
+	t_xytran.x <math.h> <mach.h> "../odisp/odisp.h" "../odisp/tc_he_bounds.h" "../odisp/tc_he.h" "tran.h" "tran.com" "debugx.com"
+	init_xytran.x <error.h> "../odisp/odisp.h" "../odisp/tc_he.h" "tran.h" "tran.com" "debugx.com"
+	t_tcmark.x "../odisp/odisp.h" "../odisp/tc_he_bounds.h" "../odisp/tc_he.h" "tran.h" "tran.com" 
+	;

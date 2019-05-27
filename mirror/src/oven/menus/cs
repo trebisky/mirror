@@ -1,0 +1,21 @@
+Configuration and Status
+Oven Overview       %oo                          $
+Thermocouple        %tc                          ?
+Heater Circuit      %he                          ?
+Control Zone        %zo                          ?
+TIC                 %ti                          ?
+DCU                 %dc                          ?
+Select Buss         %sb                          ?
+TC Polynomials      %ty                          ?
+Power Panel Fase    %fs                          ?
+Power Panel         %pp                          ?
+Analog Data         %ad                          $
+Analog Limits       %al                          $
+JTMPs for DCU       %jt                          ?
+TTMPs for DCU       %tt                          ?
+HTMPs (all)         %ht                          $
+HTMPs for Zone      %zt                          ?
+HPWRs (all)         %hp                          $
+HPWRs for Zone      %zp                          ?
+Global              %gl                          $
+Miscellaneous       %ms                          $

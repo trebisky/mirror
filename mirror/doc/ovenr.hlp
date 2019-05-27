@@ -1,0 +1,30 @@
+.help ovenr Oct mirror
+.ih
+NAME
+ovenr -- Oven rotation speed reader.
+.ih
+USAGE
+ovenr
+.ih
+PARAMETERS
+.ls connection = oven0v0,5107
+The host and port to connect to.
+.le
+.ls lower = 0
+The lower speed limit.
+.le
+.ls upper = 0
+The upper speed limit.
+.le
+.ih
+DESCRIPTION
+	Connect to the oven V computer and print on STDOUT the rotation speed
+data.  Beep on STDERR if the speed is not between the limits.
+.ih
+EXAMPLES
+	cl> ovenr connection="oven0v0,5107" > rspeed.oven0v0 &
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

@@ -1,0 +1,110 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+tsido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tszai (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tszao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsaig (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsaii (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsaio (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsna ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+tszbi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tszbo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsbig (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsbii (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsbio (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tsnb ()
+{
+	int	n = 0;
+
+	return (n);
+}

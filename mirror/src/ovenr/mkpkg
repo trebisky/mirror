@@ -1,0 +1,9 @@
+$checkout libpkg.a ../
+$update   libpkg.a
+$checkin  libpkg.a ../
+$exit
+
+libpkg.a:
+	t_ovenr.x	<mach.h>
+	zfioso.c	<libc/spp.h>
+	;

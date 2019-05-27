@@ -1,0 +1,18 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+zzung ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zzflg ()
+{
+	int	t = 0;
+
+	return (t);
+}

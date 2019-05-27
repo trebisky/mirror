@@ -1,0 +1,71 @@
+.help xytran May91 mirror
+.ih
+NAME
+xytran -- transform oven display x-y coordinates to cylindrical coordinates.
+.ih
+USAGE
+xytran x y
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls x
+The x-coordinate reported by the oven display command \fIodisp\fR.
+.le
+.ls y
+The y-coordinate reported by the oven display command \fIodisp\fR.
+.le
+.ls information = ttmp
+The information which is shown by the oven display command.  This may
+be "ttmp" (time averaged thermocouple temperatures) or "hpwr" (heater
+powers).  "Hpwr" may not be selected if "mold" \fIaspect\fR is also
+selected.
+.le
+.ls aspect = base
+The part of the oven which is shown by the oven display command.  This may
+be "base", "lid", "wall", "alum", or "mold".  "Mold" may not be selected if
+"hpwr" \fIinformation\fR is also selected.
+.le
+.ls debug = no
+Enabling \fIdebug\fR causes a variety of diagnostic information to be
+written to STDERR.
+.le
+.ih
+DESCRIPTION
+The x-y coordinates from the oven display command \fIodisp\fR are
+transformed to cylindrical coordinates.  The nearest (in 3-dimensional
+space) thermocouple or heater (as appropriate) is identified by
+its cylindrical coordinates, and the corresponding x-y coordinates
+are printed.
+.ih
+EXAMPLES
+[1]  Find the thermocouple near x = 19, y = 18 in the base.
+
+	cl> xytran 19 18
+.nf
+	cursor           xy=  19.00  18.00   rtz=  80 222  13
+	thermocouple     xy=  19.13  18.20   rtz=  79 223  13
+.fi
+
+The thermocouple is at radius 79, theta 223 degrees, and z 13.  
+Coordinate x = 19.13, y = 18.20 marks the thermocouple location.
+
+[2]  Find the heater near x = 24, y = 4 in the wall.
+
+	cl> xytran 24 4 info=h asp=w
+.nf
+	cursor           xy=  24.00   4.00   rtz= 133  67  24
+	heater element   xy=  23.82   3.49   rtz= 133  67  23
+.fi
+.ih
+TIME REQUIREMENTS
+.ih
+BUGS
+.ih
+SEE ALSO
+odisp
+.endhelp

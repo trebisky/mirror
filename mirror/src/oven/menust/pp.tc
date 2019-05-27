@@ -1,0 +1,91 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+ppido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ppado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+pppst ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+pppso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ppvni (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ppvno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ppvpi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ppvpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+pppag (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+pppao (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ppna ()
+{
+	int	n = 0;
+
+	return (n);
+}

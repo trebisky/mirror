@@ -1,0 +1,37 @@
+.help ovene May91 mirror
+.ih
+NAME
+ovene -- Oven error gatherer and logger
+.ih
+USAGE
+ovene
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls period = 60
+The period in seconds with which the error database is polled.
+.le
+.ls offset = 10
+The number of seconds to wait after the period has expired.
+.le
+.ih
+DESCRIPTION
+	Poll the V computer every period and place the oven error data into
+the shared memory segment. Then, write the errors into the error log on disk.
+.ih
+EXAMPLES
+	cl> ovene ncomp=0 offset=10 &
+
+	cl> ovene ncomp=1 offset=11 &
+
+	cl> ovene ncomp=2 offset=12 &
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

@@ -1,0 +1,9 @@
+Oven Overview       $id                                              %
+Zone Clock   Time     Sch Temp  Avg Temp     Error      Rate   Scatter Deviation
+%ai                                                                            %
+!na
+Zone L Check     Power Goal Temp  To Goal  @ClockTime   @RealTime
+%bi                                                                            %
+!nb
+Analog Data
+$aa                                                                            %

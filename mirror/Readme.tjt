@@ -1,0 +1,6 @@
+This began (as the git repo version) as the mirror package from the machine dorado.
+The tarball on dorado was created there on 1-3-2018 and work on a linux version
+was done on cholla (and trona) on and off for over a year after that before it
+was deemed wise to put this under Git.  At that point, I started by commiting
+the original dorado sources, then overlaid the work I had done up to that point
+which would in theory allow someone to get some idea of the changes made.

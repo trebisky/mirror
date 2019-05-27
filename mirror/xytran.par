@@ -1,0 +1,9 @@
+# XYTRAN.PAR - Parameter file for XYTRAN, transform image coordinates to polar.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+x,r,a,0,,,x coordinate in image (pixels)
+y,r,a,0,,,y coordinate in image (pixels)
+information,s,h,ttmp,"hpwr|ttmp",,information: "hpwr|ttmp"
+aspect,s,h,base,"base|lid|wall|mold|alum",,aspect: "base|lid|wall|mold|alum"
+debug,b,h,no,,,
+mode,s,h,ql,,,

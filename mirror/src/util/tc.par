@@ -1,0 +1,10 @@
+# TC.PAR - Parameter file for TC, test clip_line routine.
+x1,r,a,0.,,,x1
+y1,r,a,0.,,,y1
+x2,r,a,1.,,,x2
+y2,r,a,1.,,,y2
+wxl,r,h,0.,,,wxl
+wxr,r,h,1.,,,wxr
+wyb,r,h,0.,,,wyb
+wyt,r,h,1.,,,wyt
+mode,s,h,ql,,,

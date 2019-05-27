@@ -1,0 +1,35 @@
+.help oveng May91 mirror
+.ih
+NAME
+oveng -- Oven priority error gong.
+.ih
+USAGE
+oveng
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls period = 60
+The period in seconds with which the priority error database is polled.
+.le
+.ls offset = 13
+The number of seconds to wait after the period has expired.
+.le
+.ih
+DESCRIPTION
+	Poll all the V computers every period and check the oven priority
+error database.
+Parameter \fIncomp\fR is ignored.
+Ring the terminal bell once for each error.
+.ih
+EXAMPLES
+	cl> oveng &
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

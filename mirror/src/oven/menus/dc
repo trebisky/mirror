@@ -1,0 +1,13 @@
+DCU                 $id                          %
+Address             $ad                          %
+Status              $st                          &
+V computer          $vn                          ?
+V computer port     $vp                          ?
+
+TICs
+%ti                &
+!nt
+
+Select Busses
+%sb                &
+!ns

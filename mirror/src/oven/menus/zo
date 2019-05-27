@@ -1,0 +1,26 @@
+Zone $id                                         %
+Zone ID             %ad                          %
+Clock Status        $st                          &
+Clock Time          $ct                          ?
+Sched. Temperature  %et                          %
+Average Zone Temp.  $zt                          %
+Zone Temp. Error    $dt                          %
+Sched. Rate (C/hr)  %er                          %
+Zone Temp. Scatter  $zs                          %
+Sched. Deviation    %ed                          %
+Sched. TDeviation   %td                          %
+Zone Temp Scat Chk  $sc                          &
+Zone Heater Err Chk $hr                          &
+Average Power       $zp                          %
+Current Node Number %nn                          %
+Current Node Label  %nl                          %
+Proportional Coef.  %np                          %
+Integral     Coef.  %ni                          %
+Derivative   Coef.  %nd                          %
+Integral Depth      %nh                          %
+Power Limit         %nq                          %
+Wait Conditions     %nw                          %
+Goal Temperature    %nc                          %
+Time to Goal        $ng                          %
+@ Clock Time        %nt                          %
+@ Real  Time        $nr                          %

@@ -1,0 +1,8 @@
+Global (present values are for Zone Z0 and PFE 000)
+Clock Status        $st                          &
+Clock Time          $ct                          ?
+Zone Temp Scat Chk  $sc                          &
+Zone Heater Err Chk $hr                          &
+PP Sensor Status    $ps                          &
+Fase Max Load       $fm                          ?
+Fase Epsilon        $fe                          ?

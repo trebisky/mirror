@@ -1,0 +1,12 @@
+       odisp - Display oven information
+      ograph - Graph time dependencies of oven data
+	oven - Oven parameter editor
+       ovenb - Oven bi-parameter daemon
+       ovend - Oven data gatherer and logger
+       ovene - Oven error gatherer and logger
+       oveng - Oven priority error gong
+       ovenp - Oven parameter daemon
+       ovenr - Oven rotation speed reader
+       ovenw - Oven wait task
+      tcmark - Print TC locations
+      xytran - Transform oven display x-y coordinates to cylindrical coordinates

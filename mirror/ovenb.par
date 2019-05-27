@@ -1,0 +1,4 @@
+# OVENB.PAR - Parameter file for OVENB.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+mode,s,h,ql,,,

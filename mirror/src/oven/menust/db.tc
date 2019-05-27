@@ -1,0 +1,60 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+dbrfg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbwfg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbrog ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbwog ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbrdg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbreg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbwtg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dbrtg ()
+{
+	int	t = 0;
+
+	return (t);
+}

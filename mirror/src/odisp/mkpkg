@@ -1,0 +1,14 @@
+# odisp library
+
+$checkout   libpkg.a   ../
+$update     libpkg.a
+$checkin    libpkg.a   ../
+$exit
+
+libpkg.a:
+	t_odisp.x       <imhdr.h> <time.h> "odisp.h" "tc_he.h" "imdat.com" "debugd.com"
+	init_imdat.x "odisp.h" "tc_he.h" "tc_he_bounds.h" "imdat.com" "debugd.com"
+	init_loc.x   <math.h> "odisp.h" "tc_he.h" "tc_he_bounds.h" "tc_he.com" "debugd.com"
+	init_mask.x  "odisp.h" "debugd.com"
+	make_image.x <error.h> <imhdr.h> "odisp.h" "../xytran/tran.h" "tc_he.h" "tc_he_bounds.h" "../imagemask/mask.h" "../imagemask/mask.com" "tc_he.com" "imdat.com" "debugd.com"
+	;

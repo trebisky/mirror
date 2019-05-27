@@ -1,0 +1,10 @@
+# OVEN.PAR - Parameter file for OVEN.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+readonly,b,h,yes,,,Read only?
+remove,b,h,no,,,Remove shared memory on exit?
+period,i,h,60,0,86400,Autorefresh screen page period (seconds)
+offset,i,h,8,0,86400,Delay after period (seconds)
+input,s,q,,,,"?"
+coord,*imcur,h,"",,,"Image cursor: [x y wcs] key [cmd]"
+mode,s,h,ql,,,

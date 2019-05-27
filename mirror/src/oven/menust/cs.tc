@@ -1,0 +1,352 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+csoog ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstcg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstci (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csheg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cshei (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csheo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszog ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszoi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszoo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstig ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstii (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstio (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csdcg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csdci (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csdco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cssbg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cssbi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cssbo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstyg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstyi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstyo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csfsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csfsi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csfso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csppg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csppi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csppo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csadg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csalg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csjtg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csjti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csjto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csttg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cstto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cshtg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csztg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cshpg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszpg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszpi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+cszpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csglg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+csmsg ()
+{
+	int	t = 0;
+
+	return (t);
+}

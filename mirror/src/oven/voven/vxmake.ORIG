@@ -1,0 +1,8 @@
+#! /bin/csh
+setenv VX_HOST_TYPE sun4
+setenv VX_VW_BASE /u/vxworks/VW
+setenv VX_BSP_BASE /u/vxworks/VW
+setenv VX_HSP_BASE /u/vxworks/VW
+setenv GCC_EXEC_PREFIX /u/vxworks/VW/sun4.68k/lib/gcc-lib/
+set path = (/u/vxworks/VW/sun4.68k/bin $path)
+make $*

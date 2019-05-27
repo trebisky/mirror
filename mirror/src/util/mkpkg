@@ -1,0 +1,13 @@
+# libpkg library
+
+$checkout   libpkg.a   ../
+$update     libpkg.a
+$checkin    libpkg.a   ../
+$exit
+
+libpkg.a:
+	ckdatan2.x   <math.h>
+	clip_line.x
+	minutes.x    <time.h>
+	newer_file.x <error.h> <finfo.h>
+	;

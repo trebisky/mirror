@@ -1,0 +1,28 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+tttig (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tttio (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+ttnt ()
+{
+	int	n = 0;
+
+	return (n);
+}

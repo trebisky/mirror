@@ -1,0 +1,47 @@
+.help oven May91 mirror
+.ih
+NAME
+oven -- Oven parameter editor
+.ih
+USAGE
+oven
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls readonly = yes
+If \fIreadonly\fR is yes, do not attach the shared memory segment with
+write permission.  Use if you want to use the parameter editor for
+"just looking" at the parameters and data.  Non-owners of the shared
+memory segment must use this option.  If the environment variable "USER"
+is not "pilot", this parameter will be silently set to yes.
+.le
+.ls remove = no
+Remove the shared memory segment when you exit the parameter editor.
+.le
+.ls period = 60
+The period in seconds with which the parameter editor screen is auto
+refreshed.
+.le
+.ls offset = 8
+The number of seconds to wait after the period has expired.
+.le
+.ih
+DESCRIPTION
+	The parameter editor displays data from the shared memory
+segment, and allows parameters in that segment to be changed and
+sent to the oven V computers.  A backup copy of the parameter
+database will be kept in the logical directory, \fIbackup\fR,
+if defined in the environment.
+.ih
+EXAMPLES
+	cl> oven
+.ih
+BUGS
+.ih
+SEE ALSO
+.endhelp

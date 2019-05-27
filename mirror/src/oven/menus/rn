@@ -1,0 +1,14 @@
+Zone $id                                         %
+Node Label          $nl                          ?
+Rate (RPM/hr)       $rt                          ?
+Deviation           $dv                          ?
+
+Goal  Speed         $gt                          ?
+Goal  Clock Time    $gc                          ?
+Delta Speed         $dt                          ?
+Delta Clock Time    $dc                          ?
+
+
+Wait on Zone/Node   $ww                          &
+Wait on Zone ID     $wz                          ?
+Wait on Node Label  $wn                          ?

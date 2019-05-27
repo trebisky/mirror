@@ -1,0 +1,5 @@
+# OVENR.PAR - Parameter file for OVENR.
+connection,s,h,"oven0v0,5107",,,"Connection name (host,port)"
+lower,i,h,0,0,40000,Lower limit
+upper,i,h,10000,0,40000,Upper limit
+mode,s,h,ql,,,

@@ -1,0 +1,22 @@
+# Help directory for the MIRROR package.
+
+$doc		= "mirror$doc/"
+$odisp    	= "mirror$src/odisp/"
+$ograph    	= "mirror$src/ograph/"
+$xytran   	= "mirror$src/xytran/"
+$oven		= "mirror$src/oven/"
+$ovenr		= "mirror$src/ovenr/"
+
+oven		hlp=doc$oven.hlp,		src=oven$t_hoven.x
+ovenb		hlp=doc$ovenb.hlp,		src=oven$t_hoven.x
+ovend		hlp=doc$ovend.hlp,		src=oven$t_hoven.x
+ovene		hlp=doc$ovene.hlp,		src=oven$t_hoven.x
+oveng		hlp=doc$oveng.hlp,		src=oven$t_hoven.x
+ovenw		hlp=doc$ovenw.hlp,		src=oven$t_hoven.x
+ovenp		hlp=doc$ovenp.hlp,		src=oven$t_hoven.x
+ovenr		hlp=doc$ovenr.hlp,		src=ovenr$t_ovenr.x
+odisp    	hlp=doc$odisp.hlp,		src=odisp$t_odisp.x
+ograph   	hlp=doc$ograph.hlp,		src=ograph$t_ograph.x
+xytran   	hlp=doc$xytran.hlp,		src=xytran$t_xytran.x
+tcmark   	hlp=doc$tcmark.hlp,		src=xytran$t_tcmark.x
+revisions	hlp=Revisions

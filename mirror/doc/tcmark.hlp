@@ -1,0 +1,34 @@
+.help tcmark May91 mirror
+.ih
+NAME
+tcmark -- print thermocouple locations on stdout
+.ih
+USAGE
+tcmark
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls aspect = base
+The desired subset of thermocouples.
+This may be "base", "lid", "wall", "alum", or "mold".
+.le
+.ih
+DESCRIPTION
+The locations of the desired set of thermocouples are printed.
+.ih
+EXAMPLES
+
+	cl> tcmark
+.ih
+TIME REQUIREMENTS
+.ih
+BUGS
+.ih
+SEE ALSO
+odisp
+.endhelp

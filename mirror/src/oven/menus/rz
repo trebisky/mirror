@@ -1,0 +1,46 @@
+Zone $id                                         %
+Zone ID             %ad                          %
+Clock Status        $st                          &
+Clock Time          $ct                          ?
+Sched. Speed        %et                          %
+Measured Speed      $zt                          %
+Speed      Error    $dt                          %
+Sched Rate (RPM/hr) %er                          %
+
+Sched. Deviation    %ed                          %
+
+Zone Temp Scat Chk  $sc                          &
+
+
+Current Node Number %nn                          %
+Current Node Label  %nl                          %
+
+
+
+
+
+Wait Conditions     %nw                          %
+Goal Speed          %nc                          %
+Time to Goal        $ng                          %
+@ Clock Time        %nt                          %
+@ Real  Time        $nr                          %
+
+Measured Speed      $as                          %
+Phase A Voltage     $a0                          %
+Phase B Voltage     $a1                          %
+Phase C Voltage     $a2                          %
++12V Power          $a3                          %
+-12V Power          $a4                          %
++24V Power          $a5                          %
+-24V Power          $a6                          %
+Field Voltage       $a7                          %
+Arm   Current       $a8                          %
+Error               $a9                          %
+Reference           $aa                          %
+Feedback            $ab                          %
+
+Lvdt      $lv                                    %
+!la
+
+Lvdt Offset         $lo                          ?
+!lb

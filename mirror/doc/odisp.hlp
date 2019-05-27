@@ -1,0 +1,151 @@
+.help odisp May91 mirror
+.ih
+NAME
+odisp -- display oven information
+.ih
+USAGE
+odisp
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls information = ttmp
+The information to be displayed for the oven.  This may be "ttmp"
+(time averaged thermocouple temperatures), "htmp" (derived heater
+temperatures), or "hpwr" (heater powers).
+"Hpwr" may not be selected if "mold" \fIaspect\fR is also selected.
+.le
+.ls aspect = base
+The part of the oven about which to display the information.
+This may be "base", "lid", "wall", "alum", or "mold".  "Mold" may not
+be selected if "hpwr" \fIinformation\fR is also selected.
+.le
+.ls date = INDEF
+The date for the information specified.  This is entered as a
+single number in the format "yymmdd":  2 digits for the year,
+2 digits for the month, and 2 digits for the day of the month.
+If the default INDEF is specified, use today's information.
+.le
+.ls time = INDEF
+The time of day for the information specified.  This is entered as a
+single number in the format "hhmm":  2 digits for hours, 2 digits for
+minutes.  If the default INDEF is specified, use the latest information
+for the given date.
+.le
+.ls display = yes
+After forming the image from the data values, display the image or not.
+\fIDisplay\fR = no is useful for computing several images of different
+information without them being displayed.
+.le
+.ls frame = 1
+Display frame to be loaded.  This is passed on to task \fIdisplay\fR.
+.le
+.ls auto = yes
+If auto-scaling is selected (default), then chose the minimum and maximum
+display values to be the minimum and maximum data values which are used to
+form the image.  If the display range is less than 5, make the range = 5
+by adjusting the minimum and maximum display values.
+Only if \fIauto\fR = "no" will \fIz1\fR and \fIz2\fR be used, in which
+case the display range may be any amount.
+.le
+.ls z1, z2 = INDEF
+If \fIauto\fR is no, then use \fIz1\fR and \fIz2\fR as the intensity 
+values to be displayed as black and white respectively.  An INDEF value
+will cause the appropriate minimum or maximum image data value to
+be used.
+.le
+.ls showtc = no
+If \fIshowtc\fR = yes, then the locations of the thermocouples are
+indicated in the displayed image by values which appear white.
+.le
+.ls interpolate = no
+This affects \fIinformation\fR = hpwr and htmp only.  
+If \fIinterpolate\fR = no, then the heater information is shown as a
+constant value over the extent of the heater.  If \fIinterpolate\fR
+= yes, the heater information is interpolated to give a smooth display.
+.le
+.ls order = 0
+This value is passed to task \fIdisplay\fR.  This is the order of the
+interpolator to be used for spatially interpolating the image when it
+is displayed.  The current choices are 0 for pixel replication, and
+1 for bilinear interpolation.
+.le
+.ls searchdir = ""
+List of directories to search after the current directory to find the
+input data files.  This may be a comma separated list, a template,
+and/or a list file.
+.le
+.ls datadir = "uparm$"
+Use this directory to write out the image file which is then displayed
+by task \fIdisplay\fR.  If \fIdatadir\fR = "", use the
+current directory.  This allows different users to operate in the
+same directory, yet keep their work separate.
+.le
+.ls silent = yes
+This silences the report of the minimum and maximum data values which
+are used to make the image, and the report by \fIdisplay\fR of the
+minimum and maximum z-values.
+.le
+.ls debug = no
+Enabling \fIdebug\fR causes a variety of diagnostic information to
+be written to STDERR.
+.le
+.ih
+DESCRIPTION
+Information for some particular aspect of the oven is displayed in the image
+window.  Lid, base, and mold information is (optionally)
+interpolated from the data points, and extrapolated to form the image.
+Wall information is (optionally)
+interpolated and made to be continuous at the ends of the wall.  The wall
+display is theta versus z-distance.  The image title identifies what is
+displayed, and shows the image name.  The intermediate image
+can be written to a directory other than the current directory.
+X-y coordinate readout of the
+mouse position can be enabled by key F6.  To hold the coordinate readout
+constant while selecting another window, press the middle mouse button
+while moving the mouse.
+.ih
+EXAMPLES
+[1] Display the latest temperature information about the base.  Allow the
+image to be auto-scaled.  Use directory "home$oven2/" for image storage.
+
+	cl> odisp datadir=home$oven2/
+
+[2] Display the interpolated heater powers in the wall at 1:30 p.m.
+on March 17, 1988.
+
+	cl> odisp info=hp asp=w time=1330 date=880317 interp+
+
+Abbreviations may be used.
+
+[3] Display the latest mold temperatures with a display range of 100 to 120
+degrees C.
+
+	cl> odisp asp=m z1=100 z2=120 auto- searchdir=DATA*
+
+Note that \fIauto\fR must be turned off for \fIz1\fR and \fIz2\fR to
+take effect.  Look for the data file in the current directory, then in
+all DATA* directories.
+.ih
+TIME REQUIREMENTS
+The images displayed are 64 by 64 pixels for the lid, base, and mold.
+Approximately 4 seconds are required to interpolate all the pixels.
+For a 128 by 128 image, about 11 seconds are required, 256 by 256, 40 seconds.
+(Times for SUN3/160 with f68881.)  The wall image is 128 by 32.
+.ih
+BUGS
+Sometimes the cursor must be moved to the image window to cause the
+image title and x-y coordinate readout to appear.  The cursor readout
+shows x-y coordinates instead of polar coordinates.  The x-y coordinates
+may be transformed using command \fIxytran\fR.
+If the thermocouple locations are displayed (using \fIshowtc\fR = yes),
+then no temperature or power values can be shown at those thermocouple
+locations.
+.ih
+SEE ALSO
+display, xytran
+.endhelp

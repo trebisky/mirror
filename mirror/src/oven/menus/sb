@@ -1,0 +1,7 @@
+Select Buss         $id                          %
+Address             $ad                          %
+Status              $st                          &
+
+Thermocouples
+%tc                                              &
+!nt

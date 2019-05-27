@@ -1,0 +1,129 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+msvct (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msvco (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msvn ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+msjti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msjto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msxjt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msxjo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msxat ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msxao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+mscft ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+mscfo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+mslrt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+mslro (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msrpi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msrpo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+msvr ()
+{
+	int	n = 0;
+
+	return (n);
+}

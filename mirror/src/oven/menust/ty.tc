@@ -1,0 +1,95 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+tyido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tytyo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tymti (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tymto (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tynm ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+tycvi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tycvo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tync ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+tyjti (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tyjto (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tynj ()
+{
+	int	n = 0;
+
+	return (n);
+}

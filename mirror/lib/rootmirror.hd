@@ -1,0 +1,8 @@
+# Root task entry for the mirror package help tree.  Defines `mirror' as both
+# a task and a package in the mirror help database.
+
+mirror		men  = mirror$mirror.men,
+		hlp  = mirror$mirror.men,
+		sys  = mirror$mirror.hlp,
+		pkg  = mirror$mirror.hd,
+		src  = mirror$mirror.cl

@@ -1,0 +1,287 @@
+.help ograph May91 mirror
+.ih
+NAME
+ograph -- graph time dependencies of oven data
+.ih
+USAGE
+ograph
+.ih
+PARAMETERS
+.ls noven = 0
+The oven number of the shared memory segment which should be attached.
+.le
+.ls ncomp = 0
+The computer number of the shared memory segment which should be attached.
+.le
+.ls dateleft, dateright = INDEF
+The dates corresponding to the left and right edges of the graph.
+This is entered as a single number in the format "yymmdd":  2 digits
+each for the year, month, and day of the month.  If the default
+INDEF is specified, then the date is today.  The date is ignored
+if the time origin is "now".
+.le
+.ls timelorigin, timerorigin = ""
+The origins for the time offset parameters for the left and right
+edges of the graph.  If the origin is "" (default), the time offsets
+are in the format "hhmm", and represent the time on the corresponding
+date.  If the origin is "now", the time offsets are signed and in the
+format "dhhmm", and they are with respect to the current
+time (the date parameter is ignored).
+.le
+.ls timeloffset, timeroffset = INDEF
+The beginning and ending times for the graph.  If the offset is
+INDEF (default), use the earliest or latest time available for the
+data.  If the origin
+is "", the time offset is just the time of day for the given
+date, in the format "hhmm":  2 digits each for the hours and minutes.
+24 hour time is used.
+If the origin is "now", the time offset is a signed offset from the current
+time.  In this case the format is "dhhmm":  0 or more digits for days,
+and 2 digits each for hours and minutes.
+.le
+.ls yhiorigin, yloorigin = ""
+Origin for y limits.  The origins may be "average",
+"mindata", "maxdata", "zero", or
+"".  "Zero" and "" are identical.  "Average" is the average of the
+minimum and maximum data values to be plotted.
+"Mindata" and "maxdata" refer to the
+values of minimum and maximum data values to be plotted.
+.le
+.ls yhioffset, ylooffset = INDEF
+The y-axis limits.  These offset values are added to their respective
+origin values to produce the limits for the y-axis.  INDEF values with the
+origin = "average", "mindata", or "maxdata" are taken as 0.  If the origin
+is "zero" or "", then INDEF for these offsets causes the minimum or maximum
+data values to be selected for the limit.
+.le
+.ls info1, info2, info3, info4
+The information to be plotted.  Up to four separate items any be
+specified.  These may be
+.nf
+
+\fIinfo\fRx    information                                location
+
+jtmp     junction temperatures                      addr
+ttmp     time averaged thermocouple temperatures    r, th, z
+hpwr     heater powers                              r, th, z
+htmp     derived heater temperatures                r, th, z
+etmp     scheduled temperatures                     zone
+ztmp     average zone temperatures                  zone
+zsct     scatter of zone temperatures               zone
+xtmp     expected scheduled temperatures            zone
+
+.fi
+or one of various amperage analog readings:
+.nf
+
+fcPF0	fase current
+fvPF0	fase voltage
+pcP00	panel neutral current
+hvC00	computer housekeeping voltage
+
+rCfva	rotation fase voltage A
+rCfvb	rotation fase voltage B
+rCfvc	rotation fase voltage C
+rCp12	rotation plus  12v power
+rCm12	rotation minus 12v power
+rCp24	rotation plus  24v power
+rCm24	rotation minus 24v power
+rCfld	rotation field voltage
+rCamp	rotation armature current
+rCerr	rotation error
+rCref	rotation reference
+rCfdbk	rotation feedback
+rCrpm	rotation speed
+
+rClvdtN lvdt #N (0 <= N <= 15)
+
+P = Panel number
+F = Fase number
+C = Computer number
+
+.fi
+In addition, \fIinfo\fRx may be specified to be "imcur" or "=imcur".
+In either of these cases the image cursor is displayed, and one may select a
+particular heater or thermocouple to plot by centering the image
+cursor on the location and pressing a key.  The following keys have these
+meanings:
+.nf
+
+If the images are in the standard display frames:
+
+ frame   image
+
+   1     lid
+   2     wall
+   3     base
+   4     mold
+
+then one may simply select the information by these keys
+
+  key     \fIinfo\fRx
+
+   t      ttmp
+   h      htmp
+   p      hpwr
+
+.fi
+If the images are not in the standard display frames, one may specify the
+information and the location by the following keys:
+.nf
+
+  key      \fIinfo\fRx   location
+
+   l       ttmp      lid
+   w       ttmp      wall
+   b       ttmp      base
+   m       ttmp      mold
+   L       hpwr      lid
+   W       hpwr      wall
+   B       hpwr      base
+   M       hpwr      mold
+<ctrl>L    htmp      lid
+<ctrl>W    htmp      wall
+<ctrl>B    htmp      base
+<ctrl>M    htmp      mold
+
+.fi
+The particular heater or thermocouple is identified from the cursor
+location selected.
+
+The temperature and power specifications require additional location
+information as listed in the above table.  If no information should
+be plotted, use \fIinfo\fRx = "".
+.le
+.ls r1, r2, r3, r4
+Radius.  This specification is for information of type
+"ttmp", "hpwr", and "htmp".
+The units are inches.  The radius along with theta and z identifies
+the appropriate thermocouple or heater element whose information is
+to be plotted.  The element nearest the given coordinates is the one
+which is used.
+This may be selected interactively by specifying \fIinfo\fRx = "=imcur".
+.le
+.ls th1, th2, th3, th4
+Theta.  This specification is for information of type
+"ttmp", "hpwr", and "htmp".
+The units are degrees.  The angle theta along with radius and z identifies
+the appropriate thermocouple or heater element whose information is
+to be plotted.  The element nearest the given coordinates is the one
+which is used.
+This may be selected interactively by specifying \fIinfo\fRx = "=imcur".
+.le
+.ls z1, z2, z3, z4
+Z-distance.  This specification is for information of type
+"ttmp", "hpwr", and "htmp".
+The units are inches.  The z-distance along with radius and theta identifies
+the appropriate thermocouple or heater element whose information is
+to be plotted.  The element nearest the given coordinates is the one
+which is used.
+This may be selected interactively by specifying \fIinfo\fRx = "=imcur".
+.le
+.ls zone1, zone2, zone3, zone4
+Zone specifier.  The zone names are "z1", "z2", ..., "z20", and "r".
+Zone "r" is identical to "z20".  This specification is
+for information of type "etmp", "ztmp", "zsct", and "xtmp".
+.le
+.ls addr1, addr2, addr3, addr4
+Address specifier.  The DNTX address of the TIC.
+This specification is
+for information of type "jtmp".
+.le
+.ls factor1, factor2, factor3, factor4 = 1.0
+A multiplicative factor to scale the particular curve.  This serves to bring
+the various curves into the same range of values.  A scaled curve is
+indicated in the title of the graph by an asterisk ('*').
+.le
+.ls subsample = 1
+Plot every n-th data value, for \fIsubsample\fR = n.
+This is useful for very long plots.
+.le
+.ls timeunit = hours
+Units for displaying time.  This can be "hours" for time of day in hours, or
+"days" for day of month.
+.le
+.ls timezeropoint = INDEF
+This specifies the beginning of the time label on the graph.  The default
+(INDEF) uses the times from the data files, and \fIdateleft\fR and the times
+for the left to determine the time label on the graph.  If the
+timezeropoint is 0, the data is selected from the  date and time parameters,
+then displayed from a time origin of zero.  The time origin can be set to
+a date (if \fItimeunit\fR = days) by giving the zero point in "yymmdd"
+format.  If \fItimeunit\fR = hours, the time origin can be set to a time
+by giving the zero point in "hhmm" format.
+.le
+.ls searchdir = ""
+List of directories to search after the current directory to find the input
+data files.  This may be a comma separated list, a template, and/or a list
+file.
+.le
+.ls datadir = "uparm$"
+Use this directory to hold temporary files.  If \fIdatadir\fR = "",
+use the current directory.  This allows different users to operate in the 
+same directory, yet keep their work separate.
+.le
+.ls append = no
+Append to an existing plot.
+.le
+.ls device = "stdgraph"
+The output device.
+.le
+.ls debug = no
+Enabling \fIdebug\fR causes a variety of diagnostic information to
+be written to STDERR.  If \fIdebug\fR = "yes" then the temporary files are
+not deleted.
+.le
+.ih
+DESCRIPTION
+Plot the time dependent behavior of oven information.  Up to four items
+may be graphed at one time.
+The four items are represented by a solid line, a dashed line,
+a dotted line, and a dash-dotted line.
+Time is indicated in hours, temperatures
+are shown in degrees C, power in power units, voltage in volts, amperage
+in amps, rotation in rpm, and others in units. 
+The graph title shows the date of the left edge of the graph and
+identifies the four plotted lines, along with an indication if
+the values have been scaled.
+.ih
+EXAMPLES
+[1] Graph the scheduled temperature for zone 4, and the zone temperatures
+for zones 1, 2, and 3 for all of today.
+
+	cl> ograph info1=e zone1=z4 info2=z zone2=z1 info3=z zone3=z2 info4=z zone4=z3
+
+[2] Graph the heater powers for heaters at (r, theta, z) = (112, 0, 10) and
+(54, 27, 67) for March 10, 1988.
+
+	cl> ograph datel=880310 dater=880310 info1=hp r1=112 th1=0 z1=10 info2=hp r2=54 th2=27 z2=67 info3="" info4=""
+
+[3] Graph the amperage (fc000) and voltage (fv000) from 11:00 a.m. to now.
+Use directory "home$oven2/" for temporary files.
+
+	cl> ograph info1=fc000 info2=fv000 info3="" info4="" timeloff=1100 datadir=home$oven2/
+
+[4] Graph the information in example 3, but set the y limits above and below
+the minimum and maximum data values.
+
+	cl> ograph info1=fc000 info2=fv000 info3="" info4="" timeloff=1100 datadir=home$oven2/ yhior=max yhioff=10 yloor=min ylooff=-10
+
+[5] Graph the information in example 3 for the past 25 hours.
+
+	cl> ograph info1=fc000 info2=fv000 info3="" info4="" timelor=now timeloff=-10100 datadir=home$oven2/ yhior=max yhioff=10 yloor=min ylooff=-10
+
+.ih
+TIME REQUIREMENTS
+.ih
+BUGS
+Only four distinct line types can be displayed, thus limiting the
+number of identifiable pieces of information that can be graphed to four.
+\fIAppend\fR = yes allows lines to be added to the graph, but there
+remains only four distinct line types.
+Only one y-axis label can be given.  If information of different types
+is graphed, the y-axis label will be appropriate only for the first
+line drawn.
+.ih
+SEE ALSO
+.endhelp

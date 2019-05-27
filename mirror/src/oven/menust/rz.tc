@@ -1,0 +1,370 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+rzido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzadg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzstt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzsto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzcti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzcto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzetg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzeto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzzto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzdto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzerg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzero (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzedg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzedo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzsct ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzsco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznng ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznlg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznwg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznwo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzncg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzngo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzntg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rznro (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzaso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza0o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza1o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza2o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza3o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza4o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza5o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza6o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza7o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza8o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rza9o (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzaao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzabo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzlvo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzla ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+rzloi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzloo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rzlb ()
+{
+	int	n = 0;
+
+	return (n);
+}

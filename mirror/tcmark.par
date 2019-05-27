@@ -1,0 +1,5 @@
+# TCMARK.PAR - Parameter file for TCMARK, print TC locations
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+aspect,s,h,base,"base|lid|wall|mold|alum",,aspect: "base|lid|wall|mold|alum"
+mode,s,h,ql,,,

@@ -1,0 +1,114 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+fsido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsfei (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsfeo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsfmi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsfmo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fspsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fspso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsfag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsfao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsheg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fshet (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsheo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+fsne ()
+{
+	int	n = 0;
+
+	return (n);
+}

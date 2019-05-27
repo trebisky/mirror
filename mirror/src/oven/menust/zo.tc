@@ -1,0 +1,346 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+zoido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoadg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zostt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zosto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zocti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zocto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoetg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoeto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zozto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zodto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoerg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoero (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zozso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoedg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoedo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zotdg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zotdo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zosct ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zosco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zohrt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zohro (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zozpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonng ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonlg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonpg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonig ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonio (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zondg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zondo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonhg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonho (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonqg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonqo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonwg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonwo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zoncg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zongo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zontg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+zonro (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}

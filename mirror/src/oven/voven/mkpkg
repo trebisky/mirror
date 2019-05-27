@@ -1,0 +1,4 @@
+vw:
+	!vxmake
+	$move voven.o mirror$bin.vw/voven.o
+	;

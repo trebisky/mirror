@@ -1,0 +1,10 @@
+Miscellaneous parameters
+V Computer Comm.    $vc                          &
+!vn
+JTMP limit          $jt                          ?
+JTMP limit checking $xj                          &
+ADC  limit checking $xa                          &
+Config Mode         $cf                          &
+Log Rotation Data   $lr                          &
+V Computer Rport    $rp                          ?
+!vr

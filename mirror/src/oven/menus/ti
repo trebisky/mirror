@@ -1,0 +1,18 @@
+TIC                 $id                          %
+Address             $ad                          %
+Status              $st                          &
+Junction Temp       $jt                          %
+Adjacent Temp       %at                          %
+Serial number       $sn                          ?
+Reference voltage   $rv                          ?
+IJ block number     $ij                          ?
+Sensor type         %ty                          ?
+
+SB  address         %sa                          ?
+SB  status          %ss                          %
+DCU address         %da                          %
+DCU status          %ds                          %
+
+Thermocouples
+%tc                                              &
+!nt

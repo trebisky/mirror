@@ -1,0 +1,131 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+dcido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcstt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcsto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcvni (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcvno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcvpi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcvpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dctig (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dctit (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dctio (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcnt ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+dcsbg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcsbt (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcsbo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+dcns ()
+{
+	int	n = 0;
+
+	return (n);
+}

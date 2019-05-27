@@ -1,0 +1,7 @@
+# OVEND.PAR - Parameter file for OVEND.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+logdata,b,h,yes,,,Log data?
+period,i,h,60,0,86400,Polling period (seconds)
+offset,i,h,5,0,86400,Delay after period (seconds)
+mode,s,h,ql,,,

@@ -1,0 +1,171 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+rnido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnnli (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnnlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnrti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnrto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rndvi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rndvo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rngti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rngto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rngci (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rngco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rndti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rndto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rndci (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rndco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnwwt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnwwo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnwzi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnwzo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnwni (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+rnwno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}

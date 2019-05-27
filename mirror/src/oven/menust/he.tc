@@ -1,0 +1,514 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+heido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heloi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heloo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+herli (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+herlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hetli (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hetlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezli (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezlo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hevst ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hevso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hecst ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hecso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+herst ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+herso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hestt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hesto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heigt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heigo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezog ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezoi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezoo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hebmi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hebmo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hetwi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hetwo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heert ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heero (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezrg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hezro (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hehto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heetg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heeto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hepeo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heedg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heedo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hetdg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hetdo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heipg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heipo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hepig ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hepio (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heiig ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heiio (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hedig ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hedio (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heplg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+heplo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hehpo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hefeg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hefeo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hefmg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hefmo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hepsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hepso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hehag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hehao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+henhg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+henhi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+henho (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+henn ()
+{
+	int	n = 0;
+
+	return (n);
+}
+
+henfg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+henfi (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+henfo (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+hefn ()
+{
+	int	n = 0;
+
+	return (n);
+}

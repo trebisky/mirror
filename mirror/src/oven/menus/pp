@@ -1,0 +1,8 @@
+Power Panel         $id                          %
+Address             $ad                          %
+Sensor Status       $ps                          &
+V computer          $vn                          ?
+V computer port     $vp                          ?
+Analog Data
+%pa                                                                            %
+!na

@@ -1,0 +1,112 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+glstt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glsto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glcti (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glcto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glsct ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glsco (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glhrt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glhro (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glpst ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glpso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glfmi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glfmo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glfei (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+glfeo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}

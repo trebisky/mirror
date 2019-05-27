@@ -1,0 +1,19 @@
+!clear;date
+[H[2JMon May  8 10:38:46 MST 2000
+Subdirectory src/oven/menusc is up to date
+Subdirectory src/oven/menusm is up to date
+Subdirectory src/oven is up to date
+Subdirectory src/ovenr is up to date
+Subdirectory src/odisp is up to date
+Subdirectory src/ograph is up to date
+Subdirectory src/xytran is up to date
+Subdirectory src/imagemask is up to date
+Subdirectory src/smooth is up to date
+Subdirectory src/util is up to date
+Library libpkg.a is up to date
+Object x_mirror.o is up to date
+xc -p mirror x_mirror.o libpkg.a -lxtools -lc -lposix4 -o xx_mirror.e
+move `xx_mirror.e' to `mirrorbin$x_mirror.e'
+purge directory `mirrorbin$'
+!date
+Mon May  8 10:38:53 MST 2000

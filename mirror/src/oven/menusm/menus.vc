@@ -1,0 +1,2192 @@
+#include "menus.m"
+	mp->id = "aa";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Oven Main Menu";
+#include "menus.i"
+	ip->gfunc = aaexg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Exit";
+#include "menus.i"
+	ip->gfunc = aacsg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 23;
+	ip->text = "Configuration and Status";
+#include "menus.i"
+	ip->gfunc = aaerg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 8;
+	ip->text = "Error Log";
+#include "menus.i"
+	ip->gfunc = aadbg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 7;
+	ip->text = "Database";
+#include "menus.m"
+	mp->id = "ad";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Analog Data";
+#include "menus.i"
+	ip->ofunc = adaao;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+	ip->ntimes = adna;
+#include "menus.m"
+	mp->id = "al";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Analog Limits";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 19;
+	ip->text = "Voltage Upper Limits";
+#include "menus.i"
+	ip->ifunc = alvui;
+	ip->ofunc = alvuo;
+	ip->func_start = 0;
+	ip->func_end   = 29;
+	ip->ntimes = aluv;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 19;
+	ip->text = "Voltage Lower Limits";
+#include "menus.i"
+	ip->ifunc = alvli;
+	ip->ofunc = alvlo;
+	ip->func_start = 0;
+	ip->func_end   = 29;
+	ip->ntimes = allv;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 19;
+	ip->text = "Current Upper Limits";
+#include "menus.i"
+	ip->ifunc = alcui;
+	ip->ofunc = alcuo;
+	ip->func_start = 0;
+	ip->func_end   = 29;
+	ip->ntimes = aluc;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 19;
+	ip->text = "Current Lower Limits";
+#include "menus.i"
+	ip->ifunc = alcli;
+	ip->ofunc = alclo;
+	ip->func_start = 0;
+	ip->func_end   = 29;
+	ip->ntimes = allc;
+#include "menus.m"
+	mp->id = "cs";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 23;
+	ip->text = "Configuration and Status";
+#include "menus.i"
+	ip->gfunc = csoog;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Oven Overview";
+#include "menus.i"
+	ip->gfunc = cstcg;
+	ip->ifunc = cstci;
+	ip->ofunc = cstco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Thermocouple";
+#include "menus.i"
+	ip->gfunc = csheg;
+	ip->ifunc = cshei;
+	ip->ofunc = csheo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Heater Circuit";
+#include "menus.i"
+	ip->gfunc = cszog;
+	ip->ifunc = cszoi;
+	ip->ofunc = cszoo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Control Zone";
+#include "menus.i"
+	ip->gfunc = cstig;
+	ip->ifunc = cstii;
+	ip->ofunc = cstio;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 2;
+	ip->text = "TIC";
+#include "menus.i"
+	ip->gfunc = csdcg;
+	ip->ifunc = csdci;
+	ip->ofunc = csdco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 2;
+	ip->text = "DCU";
+#include "menus.i"
+	ip->gfunc = cssbg;
+	ip->ifunc = cssbi;
+	ip->ofunc = cssbo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Select Buss";
+#include "menus.i"
+	ip->gfunc = cstyg;
+	ip->ifunc = cstyi;
+	ip->ofunc = cstyo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "TC Polynomials";
+#include "menus.i"
+	ip->gfunc = csfsg;
+	ip->ifunc = csfsi;
+	ip->ofunc = csfso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Power Panel Fase";
+#include "menus.i"
+	ip->gfunc = csppg;
+	ip->ifunc = csppi;
+	ip->ofunc = csppo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Power Panel";
+#include "menus.i"
+	ip->gfunc = csadg;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Analog Data";
+#include "menus.i"
+	ip->gfunc = csalg;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Analog Limits";
+#include "menus.i"
+	ip->gfunc = csjtg;
+	ip->ifunc = csjti;
+	ip->ofunc = csjto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "JTMPs for DCU";
+#include "menus.i"
+	ip->gfunc = csttg;
+	ip->ifunc = cstti;
+	ip->ofunc = cstto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "TTMPs for DCU";
+#include "menus.i"
+	ip->gfunc = cshtg;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "HTMPs (all)";
+#include "menus.i"
+	ip->gfunc = csztg;
+	ip->ifunc = cszti;
+	ip->ofunc = cszto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "HTMPs for Zone";
+#include "menus.i"
+	ip->gfunc = cshpg;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "HPWRs (all)";
+#include "menus.i"
+	ip->gfunc = cszpg;
+	ip->ifunc = cszpi;
+	ip->ofunc = cszpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "HPWRs for Zone";
+#include "menus.i"
+	ip->gfunc = csglg;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Global";
+#include "menus.i"
+	ip->gfunc = csmsg;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Miscellaneous";
+#include "menus.m"
+	mp->id = "db";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 7;
+	ip->text = "Database";
+#include "menus.i"
+	ip->gfunc = dbrfg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Read  parameters from disk";
+#include "menus.i"
+	ip->gfunc = dbwfg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Write parameters to   disk";
+#include "menus.i"
+	ip->gfunc = dbrog;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Read  parameters from oven";
+#include "menus.i"
+	ip->gfunc = dbwog;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Write parameters to   oven";
+#include "menus.i"
+	ip->gfunc = dbrdg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Read  data       from oven";
+#include "menus.i"
+	ip->gfunc = dbreg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Read  errors     from oven";
+#include "menus.i"
+	ip->gfunc = dbwtg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Write parameters to   text";
+#include "menus.i"
+	ip->gfunc = dbrtg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 25;
+	ip->text = "Read  parameters from text";
+#include "menus.m"
+	mp->id = "dc";
+#include "menus.i"
+	ip->ofunc = dcido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 2;
+	ip->text = "DCU";
+#include "menus.i"
+	ip->ofunc = dcado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->tfunc = dcstt;
+	ip->ofunc = dcsto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Status";
+#include "menus.i"
+	ip->ifunc = dcvni;
+	ip->ofunc = dcvno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "V computer";
+#include "menus.i"
+	ip->ifunc = dcvpi;
+	ip->ofunc = dcvpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "V computer port";
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "TICs";
+#include "menus.i"
+	ip->gfunc = dctig;
+	ip->tfunc = dctit;
+	ip->ofunc = dctio;
+	ip->func_start = 0;
+	ip->func_end   = 19;
+	ip->ntimes = dcnt;
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Select Busses";
+#include "menus.i"
+	ip->gfunc = dcsbg;
+	ip->tfunc = dcsbt;
+	ip->ofunc = dcsbo;
+	ip->func_start = 0;
+	ip->func_end   = 19;
+	ip->ntimes = dcns;
+#include "menus.m"
+	mp->id = "er";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 8;
+	ip->text = "Error Log";
+#include "menus.i"
+	ip->gfunc = erelg;
+	ip->ofunc = erelo;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+	ip->ntimes = ernl;
+#include "menus.m"
+	mp->id = "fs";
+#include "menus.i"
+	ip->ofunc = fsido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Power Panel Fase";
+#include "menus.i"
+	ip->ofunc = fsado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->ifunc = fsfei;
+	ip->ofunc = fsfeo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Fase Epsilon";
+#include "menus.i"
+	ip->ifunc = fsfmi;
+	ip->ofunc = fsfmo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Fase Max Load";
+#include "menus.i"
+	ip->gfunc = fspsg;
+	ip->ofunc = fspso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "PP Sensor Status";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Analog Data";
+#include "menus.i"
+	ip->gfunc = fsfag;
+	ip->ofunc = fsfao;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Heater Elements";
+#include "menus.i"
+	ip->gfunc = fsheg;
+	ip->tfunc = fshet;
+	ip->ofunc = fsheo;
+	ip->func_start = 0;
+	ip->func_end   = 49;
+	ip->ntimes = fsne;
+#include "menus.m"
+	mp->id = "gl";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 50;
+	ip->text = "Global (present values are for Zone Z0 and PFE 000)";
+#include "menus.i"
+	ip->tfunc = glstt;
+	ip->ofunc = glsto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Clock Status";
+#include "menus.i"
+	ip->ifunc = glcti;
+	ip->ofunc = glcto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Clock Time";
+#include "menus.i"
+	ip->tfunc = glsct;
+	ip->ofunc = glsco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Zone Temp Scat Chk";
+#include "menus.i"
+	ip->tfunc = glhrt;
+	ip->ofunc = glhro;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Zone Heater Err Chk";
+#include "menus.i"
+	ip->tfunc = glpst;
+	ip->ofunc = glpso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "PP Sensor Status";
+#include "menus.i"
+	ip->ifunc = glfmi;
+	ip->ofunc = glfmo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Fase Max Load";
+#include "menus.i"
+	ip->ifunc = glfei;
+	ip->ofunc = glfeo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Fase Epsilon";
+#include "menus.m"
+	mp->id = "he";
+#include "menus.i"
+	ip->ofunc = heido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Heater Circuit";
+#include "menus.i"
+	ip->ifunc = heloi;
+	ip->ofunc = heloo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 7;
+	ip->text = "Location";
+#include "menus.i"
+	ip->ifunc = herli;
+	ip->ofunc = herlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Radius limits";
+#include "menus.i"
+	ip->ifunc = hetli;
+	ip->ofunc = hetlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Theta  limits";
+#include "menus.i"
+	ip->ifunc = hezli;
+	ip->ofunc = hezlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Z      limits";
+#include "menus.i"
+	ip->ofunc = heado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->tfunc = hevst;
+	ip->ofunc = hevso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Voltage Sensor";
+#include "menus.i"
+	ip->tfunc = hecst;
+	ip->ofunc = hecso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "L. Current Sensor";
+#include "menus.i"
+	ip->tfunc = herst;
+	ip->ofunc = herso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "R. Current Sensor";
+#include "menus.i"
+	ip->tfunc = hestt;
+	ip->ofunc = hesto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Heater Status";
+#include "menus.i"
+	ip->tfunc = heigt;
+	ip->ofunc = heigo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Heater Ignore";
+#include "menus.i"
+	ip->gfunc = hezog;
+	ip->ifunc = hezoi;
+	ip->ofunc = hezoo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Control Zone";
+#include "menus.i"
+	ip->ifunc = hebmi;
+	ip->ofunc = hebmo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Beam Number";
+#include "menus.i"
+	ip->ifunc = hetwi;
+	ip->ofunc = hetwo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Twistlock Number";
+#include "menus.i"
+	ip->tfunc = heert;
+	ip->ofunc = heero;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Heater Error Check";
+#include "menus.i"
+	ip->gfunc = hezrg;
+	ip->ofunc = hezro;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Zone Heater Err Chk";
+#include "menus.i"
+	ip->ofunc = hehto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Heater Temperature";
+#include "menus.i"
+	ip->gfunc = heetg;
+	ip->ofunc = heeto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Sched. Temperature";
+#include "menus.i"
+	ip->ofunc = hepeo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Temperature Error";
+#include "menus.i"
+	ip->gfunc = heedg;
+	ip->ofunc = heedo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Sched. Deviation";
+#include "menus.i"
+	ip->gfunc = hetdg;
+	ip->ofunc = hetdo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Sched. TDeviation";
+#include "menus.i"
+	ip->gfunc = heipg;
+	ip->ofunc = heipo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Integral Depth";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 54;
+	ip->text = "PID Term              Error   Coefficient       Product";
+#include "menus.i"
+	ip->gfunc = hepig;
+	ip->ofunc = hepio;
+	ip->func_start = 20;
+	ip->func_end   = 54;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Proportional";
+#include "menus.i"
+	ip->gfunc = heiig;
+	ip->ofunc = heiio;
+	ip->func_start = 20;
+	ip->func_end   = 54;
+	ip->text_start = 0;
+	ip->text_end   = 7;
+	ip->text = "Integral";
+#include "menus.i"
+	ip->gfunc = hedig;
+	ip->ofunc = hedio;
+	ip->func_start = 20;
+	ip->func_end   = 54;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Derivative";
+#include "menus.i"
+	ip->gfunc = heplg;
+	ip->ofunc = heplo;
+	ip->func_start = 41;
+	ip->func_end   = 45;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Power Limit";
+#include "menus.i"
+	ip->ofunc = hehpo;
+	ip->func_start = 41;
+	ip->func_end   = 45;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Requested Power";
+#include "menus.i"
+	ip->gfunc = hefeg;
+	ip->ofunc = hefeo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Fase Epsilon";
+#include "menus.i"
+	ip->gfunc = hefmg;
+	ip->ofunc = hefmo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Fase Max Load";
+#include "menus.i"
+	ip->gfunc = hepsg;
+	ip->ofunc = hepso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "PP Sensor Status";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Analog Data";
+#include "menus.i"
+	ip->gfunc = hehag;
+	ip->ofunc = hehao;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Near neighbor TC";
+#include "menus.i"
+	ip->gfunc = henhg;
+	ip->ifunc = henhi;
+	ip->ofunc = henho;
+	ip->func_start = 0;
+	ip->func_end   = 29;
+	ip->ntimes = henn;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Far  neighbor TC";
+#include "menus.i"
+	ip->gfunc = henfg;
+	ip->ifunc = henfi;
+	ip->ofunc = henfo;
+	ip->func_start = 0;
+	ip->func_end   = 29;
+	ip->ntimes = hefn;
+#include "menus.m"
+	mp->id = "hp";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 74;
+	ip->text = "Fase   0000   0001   0002   0003   0004    0005   0006   0007   0008   0009";
+#include "menus.i"
+	ip->gfunc = hpfsg;
+	ip->ofunc = hpfso;
+	ip->func_start = 0;
+	ip->func_end   = 77;
+	ip->ntimes = hpnf;
+#include "menus.m"
+	mp->id = "ht";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 74;
+	ip->text = "Fase   0000   0001   0002   0003   0004    0005   0006   0007   0008   0009";
+#include "menus.i"
+	ip->gfunc = htfsg;
+	ip->ofunc = htfso;
+	ip->func_start = 0;
+	ip->func_end   = 77;
+	ip->ntimes = htnf;
+#include "menus.m"
+	mp->id = "jt";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 38;
+	ip->text = "TIC    JTMP         Adj.   JTMP    diff";
+#include "menus.i"
+	ip->gfunc = jttig;
+	ip->ofunc = jttio;
+	ip->func_start = 0;
+	ip->func_end   = 39;
+	ip->ntimes = jtnt;
+#include "menus.m"
+	mp->id = "ms";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 23;
+	ip->text = "Miscellaneous parameters";
+#include "menus.i"
+	ip->tfunc = msvct;
+	ip->ofunc = msvco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "V Computer Comm.";
+	ip->ntimes = msvn;
+#include "menus.i"
+	ip->ifunc = msjti;
+	ip->ofunc = msjto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "JTMP limit";
+#include "menus.i"
+	ip->tfunc = msxjt;
+	ip->ofunc = msxjo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "JTMP limit checking";
+#include "menus.i"
+	ip->tfunc = msxat;
+	ip->ofunc = msxao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "ADC  limit checking";
+#include "menus.i"
+	ip->tfunc = mscft;
+	ip->ofunc = mscfo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Config Mode";
+#include "menus.i"
+	ip->tfunc = mslrt;
+	ip->ofunc = mslro;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Log Rotation Data";
+#include "menus.i"
+	ip->ifunc = msrpi;
+	ip->ofunc = msrpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "V Computer Rport";
+	ip->ntimes = msvr;
+#include "menus.m"
+	mp->id = "no";
+#include "menus.i"
+	ip->ofunc = noido;
+	ip->func_start = 5;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Zone";
+#include "menus.i"
+	ip->ifunc = nonli;
+	ip->ofunc = nonlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Node Label";
+#include "menus.i"
+	ip->ifunc = norti;
+	ip->ofunc = norto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Rate (C/hr)";
+#include "menus.i"
+	ip->ifunc = nodvi;
+	ip->ofunc = nodvo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 8;
+	ip->text = "Deviation";
+#include "menus.i"
+	ip->ifunc = notdi;
+	ip->ofunc = notdo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "TDeviation";
+#include "menus.i"
+	ip->ifunc = nogti;
+	ip->ofunc = nogto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Goal  Temperature";
+#include "menus.i"
+	ip->ifunc = nogci;
+	ip->ofunc = nogco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Goal  Clock Time";
+#include "menus.i"
+	ip->ifunc = nodti;
+	ip->ofunc = nodto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Delta Temperature";
+#include "menus.i"
+	ip->ifunc = nodci;
+	ip->ofunc = nodco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Delta Clock Time";
+#include "menus.i"
+	ip->tfunc = nowtt;
+	ip->ofunc = nowto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Wait on Tolerance";
+#include "menus.i"
+	ip->tfunc = nowdt;
+	ip->ofunc = nowdo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Wait on Deviation";
+#include "menus.i"
+	ip->tfunc = nowwt;
+	ip->ofunc = nowwo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Wait on Zone/Node";
+#include "menus.i"
+	ip->ifunc = nowzi;
+	ip->ofunc = nowzo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Wait on Zone ID";
+#include "menus.i"
+	ip->ifunc = nowni;
+	ip->ofunc = nowno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Wait on Node Label";
+#include "menus.i"
+	ip->ifunc = nonpi;
+	ip->ofunc = nonpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Proportional Coef.";
+#include "menus.i"
+	ip->ifunc = nonii;
+	ip->ofunc = nonio;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Integral     Coef.";
+#include "menus.i"
+	ip->ifunc = nondi;
+	ip->ofunc = nondo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Derivative   Coef.";
+#include "menus.i"
+	ip->ifunc = nonhi;
+	ip->ofunc = nonho;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Integral Depth";
+#include "menus.i"
+	ip->ifunc = nonqi;
+	ip->ofunc = nonqo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Power Limit";
+#include "menus.m"
+	mp->id = "oo";
+#include "menus.i"
+	ip->ofunc = ooido;
+	ip->func_start = 20;
+	ip->func_end   = 69;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Oven Overview";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 79;
+	ip->text = "Zone Clock   Time     Sch Temp  Avg Temp     Error      Rate   Scatter Deviation";
+#include "menus.i"
+	ip->gfunc = ooaig;
+	ip->ofunc = ooaio;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+	ip->ntimes = oona;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 64;
+	ip->text = "Zone L Check     Power Goal Temp  To Goal  @ClockTime   @RealTime";
+#include "menus.i"
+	ip->gfunc = oobig;
+	ip->ofunc = oobio;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+	ip->ntimes = oonb;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Analog Data";
+#include "menus.i"
+	ip->ofunc = ooaao;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+#include "menus.m"
+	mp->id = "pp";
+#include "menus.i"
+	ip->ofunc = ppido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Power Panel";
+#include "menus.i"
+	ip->ofunc = ppado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->tfunc = pppst;
+	ip->ofunc = pppso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Sensor Status";
+#include "menus.i"
+	ip->ifunc = ppvni;
+	ip->ofunc = ppvno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "V computer";
+#include "menus.i"
+	ip->ifunc = ppvpi;
+	ip->ofunc = ppvpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "V computer port";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Analog Data";
+#include "menus.i"
+	ip->gfunc = pppag;
+	ip->ofunc = pppao;
+	ip->func_start = 0;
+	ip->func_end   = 79;
+	ip->ntimes = ppna;
+#include "menus.m"
+	mp->id = "rn";
+#include "menus.i"
+	ip->ofunc = rnido;
+	ip->func_start = 5;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Zone";
+#include "menus.i"
+	ip->ifunc = rnnli;
+	ip->ofunc = rnnlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Node Label";
+#include "menus.i"
+	ip->ifunc = rnrti;
+	ip->ofunc = rnrto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Rate (RPM/hr)";
+#include "menus.i"
+	ip->ifunc = rndvi;
+	ip->ofunc = rndvo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 8;
+	ip->text = "Deviation";
+#include "menus.i"
+#include "menus.i"
+	ip->ifunc = rngti;
+	ip->ofunc = rngto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Goal  Speed";
+#include "menus.i"
+	ip->ifunc = rngci;
+	ip->ofunc = rngco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Goal  Clock Time";
+#include "menus.i"
+	ip->ifunc = rndti;
+	ip->ofunc = rndto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Delta Speed";
+#include "menus.i"
+	ip->ifunc = rndci;
+	ip->ofunc = rndco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Delta Clock Time";
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+	ip->tfunc = rnwwt;
+	ip->ofunc = rnwwo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Wait on Zone/Node";
+#include "menus.i"
+	ip->ifunc = rnwzi;
+	ip->ofunc = rnwzo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Wait on Zone ID";
+#include "menus.i"
+	ip->ifunc = rnwni;
+	ip->ofunc = rnwno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Wait on Node Label";
+#include "menus.m"
+	mp->id = "rt";
+#include "menus.i"
+	ip->ofunc = rtido;
+	ip->func_start = 5;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Zone";
+#include "menus.i"
+	ip->ifunc = rtzai;
+	ip->ofunc = rtzao;
+	ip->func_start = 67;
+	ip->func_end   = 71;
+	ip->text_start = 0;
+	ip->text_end   = 60;
+	ip->text = "Lab  Rate    Dev         G RPM    Gtime   D RPM    Dtime Wait";
+#include "menus.i"
+	ip->gfunc = rtaig;
+	ip->ifunc = rtaii;
+	ip->ofunc = rtaio;
+	ip->func_start = 0;
+	ip->func_end   = 59;
+	ip->ntimes = rtna;
+#include "menus.m"
+	mp->id = "rz";
+#include "menus.i"
+	ip->ofunc = rzido;
+	ip->func_start = 5;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Zone";
+#include "menus.i"
+	ip->gfunc = rzadg;
+	ip->ofunc = rzado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Zone ID";
+#include "menus.i"
+	ip->tfunc = rzstt;
+	ip->ofunc = rzsto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Clock Status";
+#include "menus.i"
+	ip->ifunc = rzcti;
+	ip->ofunc = rzcto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Clock Time";
+#include "menus.i"
+	ip->gfunc = rzetg;
+	ip->ofunc = rzeto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Sched. Speed";
+#include "menus.i"
+	ip->ofunc = rzzto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Measured Speed";
+#include "menus.i"
+	ip->ofunc = rzdto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Speed      Error";
+#include "menus.i"
+	ip->gfunc = rzerg;
+	ip->ofunc = rzero;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Sched Rate (RPM/hr)";
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = rzedg;
+	ip->ofunc = rzedo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Sched. Deviation";
+#include "menus.i"
+#include "menus.i"
+	ip->tfunc = rzsct;
+	ip->ofunc = rzsco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Zone Temp Scat Chk";
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = rznng;
+	ip->ofunc = rznno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Current Node Number";
+#include "menus.i"
+	ip->gfunc = rznlg;
+	ip->ofunc = rznlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Current Node Label";
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = rznwg;
+	ip->ofunc = rznwo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Wait Conditions";
+#include "menus.i"
+	ip->gfunc = rzncg;
+	ip->ofunc = rznco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Goal Speed";
+#include "menus.i"
+	ip->ofunc = rzngo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Time to Goal";
+#include "menus.i"
+	ip->gfunc = rzntg;
+	ip->ofunc = rznto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "@ Clock Time";
+#include "menus.i"
+	ip->ofunc = rznro;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "@ Real  Time";
+#include "menus.i"
+#include "menus.i"
+	ip->ofunc = rzaso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Measured Speed";
+#include "menus.i"
+	ip->ofunc = rza0o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Phase A Voltage";
+#include "menus.i"
+	ip->ofunc = rza1o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Phase B Voltage";
+#include "menus.i"
+	ip->ofunc = rza2o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Phase C Voltage";
+#include "menus.i"
+	ip->ofunc = rza3o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "+12V Power";
+#include "menus.i"
+	ip->ofunc = rza4o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "-12V Power";
+#include "menus.i"
+	ip->ofunc = rza5o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "+24V Power";
+#include "menus.i"
+	ip->ofunc = rza6o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "-24V Power";
+#include "menus.i"
+	ip->ofunc = rza7o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Field Voltage";
+#include "menus.i"
+	ip->ofunc = rza8o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Arm   Current";
+#include "menus.i"
+	ip->ofunc = rza9o;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 4;
+	ip->text = "Error";
+#include "menus.i"
+	ip->ofunc = rzaao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 8;
+	ip->text = "Reference";
+#include "menus.i"
+	ip->ofunc = rzabo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 7;
+	ip->text = "Feedback";
+#include "menus.i"
+#include "menus.i"
+	ip->ofunc = rzlvo;
+	ip->func_start = 10;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Lvdt";
+	ip->ntimes = rzla;
+#include "menus.i"
+#include "menus.i"
+	ip->ifunc = rzloi;
+	ip->ofunc = rzloo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Lvdt Offset";
+	ip->ntimes = rzlb;
+#include "menus.m"
+	mp->id = "sb";
+#include "menus.i"
+	ip->ofunc = sbido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Select Buss";
+#include "menus.i"
+	ip->ofunc = sbado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->tfunc = sbstt;
+	ip->ofunc = sbsto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Status";
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Thermocouples";
+#include "menus.i"
+	ip->gfunc = sbtcg;
+	ip->tfunc = sbtct;
+	ip->ofunc = sbtco;
+	ip->func_start = 0;
+	ip->func_end   = 49;
+	ip->ntimes = sbnt;
+#include "menus.m"
+	mp->id = "tc";
+#include "menus.i"
+	ip->ofunc = tcido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Thermocouple";
+#include "menus.i"
+	ip->ifunc = tcloi;
+	ip->ofunc = tcloo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 7;
+	ip->text = "Location";
+#include "menus.i"
+	ip->ofunc = tcado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->ofunc = tctpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Temperature";
+#include "menus.i"
+	ip->ifunc = tcsni;
+	ip->ofunc = tcsno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Serial number";
+#include "menus.i"
+	ip->ifunc = tcofi;
+	ip->ofunc = tcofo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Offset";
+#include "menus.i"
+	ip->tfunc = tcstt;
+	ip->ofunc = tcsto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Status";
+#include "menus.i"
+	ip->tfunc = tcigt;
+	ip->ofunc = tcigo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Ignore";
+#include "menus.i"
+	ip->gfunc = tctyg;
+	ip->ifunc = tctyi;
+	ip->ofunc = tctyo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Type";
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = tctjg;
+	ip->ofunc = tctjo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "TIC ij block";
+#include "menus.i"
+	ip->gfunc = tctng;
+	ip->ofunc = tctno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "TIC serial";
+#include "menus.i"
+	ip->gfunc = tctag;
+	ip->ofunc = tctao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "TIC address";
+#include "menus.i"
+	ip->gfunc = tcttg;
+	ip->ofunc = tctto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "TIC junc temp";
+#include "menus.i"
+	ip->gfunc = tctvg;
+	ip->ofunc = tctvo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "TIC ref volt";
+#include "menus.i"
+	ip->gfunc = tctsg;
+	ip->ofunc = tctso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "TIC status";
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = tcsag;
+	ip->ofunc = tcsao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "SB  address";
+#include "menus.i"
+	ip->gfunc = tcssg;
+	ip->ofunc = tcsso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "SB  status";
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = tcdag;
+	ip->ofunc = tcdao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "DCU address";
+#include "menus.i"
+	ip->gfunc = tcdsg;
+	ip->ofunc = tcdso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "DCU status";
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Near neighbor of HE";
+#include "menus.i"
+	ip->gfunc = tcnhg;
+	ip->ifunc = tcnhi;
+	ip->ofunc = tcnho;
+	ip->func_start = 0;
+	ip->func_end   = 39;
+	ip->ntimes = tcnn;
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Far  neighbor of HE";
+#include "menus.i"
+	ip->gfunc = tcnfg;
+	ip->ifunc = tcnfi;
+	ip->ofunc = tcnfo;
+	ip->func_start = 0;
+	ip->func_end   = 39;
+	ip->ntimes = tcfn;
+#include "menus.m"
+	mp->id = "ti";
+#include "menus.i"
+	ip->ofunc = tiido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 2;
+	ip->text = "TIC";
+#include "menus.i"
+	ip->ofunc = tiado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Address";
+#include "menus.i"
+	ip->tfunc = tistt;
+	ip->ofunc = tisto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 5;
+	ip->text = "Status";
+#include "menus.i"
+	ip->ofunc = tijto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Junction Temp";
+#include "menus.i"
+	ip->gfunc = tiatg;
+	ip->ofunc = tiato;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Adjacent Temp";
+#include "menus.i"
+	ip->ifunc = tisni;
+	ip->ofunc = tisno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Serial number";
+#include "menus.i"
+	ip->ifunc = tirvi;
+	ip->ofunc = tirvo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Reference voltage";
+#include "menus.i"
+	ip->ifunc = tiiji;
+	ip->ofunc = tiijo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "IJ block number";
+#include "menus.i"
+	ip->gfunc = tityg;
+	ip->ifunc = tityi;
+	ip->ofunc = tityo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Sensor type";
+#include "menus.i"
+#include "menus.i"
+	ip->gfunc = tisag;
+	ip->ifunc = tisai;
+	ip->ofunc = tisao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "SB  address";
+#include "menus.i"
+	ip->gfunc = tissg;
+	ip->ofunc = tisso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "SB  status";
+#include "menus.i"
+	ip->gfunc = tidag;
+	ip->ofunc = tidao;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "DCU address";
+#include "menus.i"
+	ip->gfunc = tidsg;
+	ip->ofunc = tidso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "DCU status";
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Thermocouples";
+#include "menus.i"
+	ip->gfunc = titcg;
+	ip->tfunc = titct;
+	ip->ofunc = titco;
+	ip->func_start = 0;
+	ip->func_end   = 49;
+	ip->ntimes = tint;
+#include "menus.m"
+	mp->id = "ts";
+#include "menus.i"
+	ip->ofunc = tsido;
+	ip->func_start = 5;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Zone";
+#include "menus.i"
+	ip->ifunc = tszai;
+	ip->ofunc = tszao;
+	ip->func_start = 67;
+	ip->func_end   = 71;
+	ip->text_start = 0;
+	ip->text_end   = 60;
+	ip->text = "Lab  Rate    Dev   Tdev  GTemp    Gtime   DTemp    Dtime Wait";
+#include "menus.i"
+	ip->gfunc = tsaig;
+	ip->ifunc = tsaii;
+	ip->ofunc = tsaio;
+	ip->func_start = 0;
+	ip->func_end   = 66;
+	ip->ntimes = tsna;
+#include "menus.i"
+	ip->ifunc = tszbi;
+	ip->ofunc = tszbo;
+	ip->func_start = 60;
+	ip->func_end   = 64;
+	ip->text_start = 0;
+	ip->text_end   = 59;
+	ip->text = "Lab Proportional   Integral       Derivative     depth  Plim";
+#include "menus.i"
+	ip->gfunc = tsbig;
+	ip->ifunc = tsbii;
+	ip->ofunc = tsbio;
+	ip->func_start = 0;
+	ip->func_end   = 59;
+	ip->ntimes = tsnb;
+#include "menus.m"
+	mp->id = "tt";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 38;
+	ip->text = "TIC    0000   0001   0002   0003   0004";
+#include "menus.i"
+	ip->gfunc = tttig;
+	ip->ofunc = tttio;
+	ip->func_start = 0;
+	ip->func_end   = 39;
+	ip->ntimes = ttnt;
+#include "menus.m"
+	mp->id = "ty";
+#include "menus.i"
+	ip->ofunc = tyido;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "TC Polynomials";
+#include "menus.i"
+	ip->ofunc = tytyo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Sensor type";
+#include "menus.i"
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 35;
+	ip->text = "Measurement Temperature       (C/mv)";
+#include "menus.i"
+	ip->ifunc = tymti;
+	ip->ofunc = tymto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->ntimes = tynm;
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 35;
+	ip->text = "Compensation Voltage          (mv/C)";
+#include "menus.i"
+	ip->ifunc = tycvi;
+	ip->ofunc = tycvo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->ntimes = tync;
+#include "menus.i"
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 35;
+	ip->text = "Junction    Temperature       (C/mv)";
+#include "menus.i"
+	ip->ifunc = tyjti;
+	ip->ofunc = tyjto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->ntimes = tynj;
+#include "menus.m"
+	mp->id = "zo";
+#include "menus.i"
+	ip->ofunc = zoido;
+	ip->func_start = 5;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 3;
+	ip->text = "Zone";
+#include "menus.i"
+	ip->gfunc = zoadg;
+	ip->ofunc = zoado;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 6;
+	ip->text = "Zone ID";
+#include "menus.i"
+	ip->tfunc = zostt;
+	ip->ofunc = zosto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Clock Status";
+#include "menus.i"
+	ip->ifunc = zocti;
+	ip->ofunc = zocto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 9;
+	ip->text = "Clock Time";
+#include "menus.i"
+	ip->gfunc = zoetg;
+	ip->ofunc = zoeto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Sched. Temperature";
+#include "menus.i"
+	ip->ofunc = zozto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Average Zone Temp.";
+#include "menus.i"
+	ip->ofunc = zodto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Zone Temp. Error";
+#include "menus.i"
+	ip->gfunc = zoerg;
+	ip->ofunc = zoero;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Sched. Rate (C/hr)";
+#include "menus.i"
+	ip->ofunc = zozso;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Zone Temp. Scatter";
+#include "menus.i"
+	ip->gfunc = zoedg;
+	ip->ofunc = zoedo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Sched. Deviation";
+#include "menus.i"
+	ip->gfunc = zotdg;
+	ip->ofunc = zotdo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 16;
+	ip->text = "Sched. TDeviation";
+#include "menus.i"
+	ip->tfunc = zosct;
+	ip->ofunc = zosco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Zone Temp Scat Chk";
+#include "menus.i"
+	ip->tfunc = zohrt;
+	ip->ofunc = zohro;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Zone Heater Err Chk";
+#include "menus.i"
+	ip->ofunc = zozpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 12;
+	ip->text = "Average Power";
+#include "menus.i"
+	ip->gfunc = zonng;
+	ip->ofunc = zonno;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 18;
+	ip->text = "Current Node Number";
+#include "menus.i"
+	ip->gfunc = zonlg;
+	ip->ofunc = zonlo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Current Node Label";
+#include "menus.i"
+	ip->gfunc = zonpg;
+	ip->ofunc = zonpo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Proportional Coef.";
+#include "menus.i"
+	ip->gfunc = zonig;
+	ip->ofunc = zonio;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Integral     Coef.";
+#include "menus.i"
+	ip->gfunc = zondg;
+	ip->ofunc = zondo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 17;
+	ip->text = "Derivative   Coef.";
+#include "menus.i"
+	ip->gfunc = zonhg;
+	ip->ofunc = zonho;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 13;
+	ip->text = "Integral Depth";
+#include "menus.i"
+	ip->gfunc = zonqg;
+	ip->ofunc = zonqo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 10;
+	ip->text = "Power Limit";
+#include "menus.i"
+	ip->gfunc = zonwg;
+	ip->ofunc = zonwo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Wait Conditions";
+#include "menus.i"
+	ip->gfunc = zoncg;
+	ip->ofunc = zonco;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 15;
+	ip->text = "Goal Temperature";
+#include "menus.i"
+	ip->ofunc = zongo;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "Time to Goal";
+#include "menus.i"
+	ip->gfunc = zontg;
+	ip->ofunc = zonto;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "@ Clock Time";
+#include "menus.i"
+	ip->ofunc = zonro;
+	ip->func_start = 20;
+	ip->func_end   = 49;
+	ip->text_start = 0;
+	ip->text_end   = 11;
+	ip->text = "@ Real  Time";
+#include "menus.m"
+	mp->id = "zp";
+#include "menus.i"
+	ip->ofunc = zpido;
+	ip->func_start = 75;
+	ip->func_end   = 79;
+	ip->text_start = 0;
+	ip->text_end   = 74;
+	ip->text = "Fase   0000   0001   0002   0003   0004    0005   0006   0007   0008   0009";
+#include "menus.i"
+	ip->gfunc = zpfsg;
+	ip->ofunc = zpfso;
+	ip->func_start = 0;
+	ip->func_end   = 77;
+	ip->ntimes = zpnf;
+#include "menus.m"
+	mp->id = "zt";
+#include "menus.i"
+	ip->ofunc = ztido;
+	ip->func_start = 75;
+	ip->func_end   = 79;
+	ip->text_start = 0;
+	ip->text_end   = 74;
+	ip->text = "Fase   0000   0001   0002   0003   0004    0005   0006   0007   0008   0009";
+#include "menus.i"
+	ip->gfunc = ztfsg;
+	ip->ofunc = ztfso;
+	ip->func_start = 0;
+	ip->func_end   = 77;
+	ip->ntimes = ztnf;
+#include "menus.m"
+	mp->id = "zz";
+#include "menus.i"
+	ip->text_start = 0;
+	ip->text_end   = 14;
+	ip->text = "Parameter cache";
+#include "menus.i"
+	ip->gfunc = zzung;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 24;
+	ip->text = "Install parameter changes";
+#include "menus.i"
+	ip->gfunc = zzflg;
+	ip->func_start = 30;
+	ip->func_end   = 39;
+	ip->text_start = 0;
+	ip->text_end   = 24;
+	ip->text = "Discard parameter changes";

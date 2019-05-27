@@ -1,0 +1,31 @@
+# Make the MIRROR package.
+
+$call	relink
+$exit
+
+update:
+	$call	relink
+	$call	install
+	;
+
+relink:
+	$set	LIBS = "-lxtools -lc -lposix4"
+	$update libpkg.a
+	$omake	x_mirror.x
+	$link	x_mirror.o libpkg.a $(LIBS) -o xx_mirror.e
+	;
+
+install:
+	$move	xx_mirror.e mirrorbin$x_mirror.e
+	;
+
+libpkg.a:
+	@oven
+	@ovenr
+	@odisp
+	@ograph
+	@xytran
+	@imagemask
+	@smooth
+	@util
+	;

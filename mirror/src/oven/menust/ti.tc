@@ -1,0 +1,229 @@
+#include "../oven.h"
+#include "../menus.h"
+#include "../context.h"
+#include "../global.h"
+
+tiido (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tiado (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tistt ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tijto (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tiatg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tiato (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisni (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisno (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tirvi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tirvo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tiiji (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tiijo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tityg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tityi (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tityo (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisai (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tissg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tisso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tidag ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tidao (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tidsg ()
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tidso (s)
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+titcg (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+titct (n)
+int	n;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+titco (n, s)
+int	n;
+char	*s;
+{
+	int	t = 0;
+
+	return (t);
+}
+
+tint ()
+{
+	int	n = 0;
+
+	return (n);
+}

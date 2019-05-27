@@ -1,0 +1,7 @@
+# Global environment definitions for the MIRROR package.
+
+set	pkglibs		= "mirror$lib/"
+set	mirrorbin	= "mirror$bin(arch)/"
+set	mirrorlib	= "mirror$lib/"
+
+keep

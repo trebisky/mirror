@@ -1,0 +1,5 @@
+# Root help directory for the MIRROR package.  This dummy package is necessary
+# in order to have `mirror' appear as a module in some package, so that the
+# user can type "help mirror" (with the `mirror' given as a task).
+
+_mirror		pkg = mirror$lib/rootmirror.hd

@@ -1,0 +1,37 @@
+$checkout libpkg.a ../
+$update   libpkg.a
+$checkin  libpkg.a ../
+$exit
+
+libpkg.a:
+	aa.c		../oven.h ../menus.h ../context.h ../global.h
+	ad.c		../oven.h ../menus.h ../context.h ../global.h
+	al.c		../oven.h ../menus.h ../context.h ../global.h
+	cs.c		../oven.h ../menus.h ../context.h ../global.h
+	db.c		../oven.h ../menus.h ../context.h ../global.h
+	dc.c		../oven.h ../menus.h ../context.h ../global.h
+	er.c		../oven.h ../menus.h ../context.h ../global.h
+	fs.c		../oven.h ../menus.h ../context.h ../global.h
+	gl.c		../oven.h ../menus.h ../context.h ../global.h
+	he.c		../oven.h ../menus.h ../context.h ../global.h
+	ht.c		../oven.h ../menus.h ../context.h ../global.h
+	hp.c		../oven.h ../menus.h ../context.h ../global.h
+	jt.c		../oven.h ../menus.h ../context.h ../global.h
+	ms.c		../oven.h ../menus.h ../context.h ../global.h
+	no.c		../oven.h ../menus.h ../context.h ../global.h
+	oo.c		../oven.h ../menus.h ../context.h ../global.h
+	pp.c		../oven.h ../menus.h ../context.h ../global.h
+	rn.c		../oven.h ../menus.h ../context.h ../global.h
+	rt.c		../oven.h ../menus.h ../context.h ../global.h
+	rz.c		../oven.h ../menus.h ../context.h ../global.h
+	sb.c		../oven.h ../menus.h ../context.h ../global.h
+	tc.c		../oven.h ../menus.h ../context.h ../global.h
+	ti.c		../oven.h ../menus.h ../context.h ../global.h
+	ts.c		../oven.h ../menus.h ../context.h ../global.h
+	tt.c		../oven.h ../menus.h ../context.h ../global.h
+	ty.c		../oven.h ../menus.h ../context.h ../global.h
+	zo.c		../oven.h ../menus.h ../context.h ../global.h
+	zp.c		../oven.h ../menus.h ../context.h ../global.h
+	zt.c		../oven.h ../menus.h ../context.h ../global.h
+	zz.c		../oven.h ../menus.h ../context.h ../global.h
+	;

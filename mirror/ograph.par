@@ -1,0 +1,51 @@
+# OGRAPH.PAR -Parameter file for OGRAPH, for graphing time dependencies of data.
+noven,i,h,0,0,9,Oven number
+ncomp,i,h,0,0,2,Computer number
+dateleft,i,h,INDEF,000101,991231,left date (yymmdd); INDEF for current
+dateright,i,h,INDEF,000101,991231,right date (yymmdd); INDEF for current
+timelorigin,s,h,"",,,origin for left time: now|""
+timerorigin,s,h,"",,,origin for right time: now|""
+timeloffset,i,h,INDEF,,,offset (dhhmm) from origin for left time
+timeroffset,i,h,INDEF,,,offset (dhhmm) from origin for right time
+yhiorigin,s,h,"",,,origin for high y limit: average|mindata|maxdata|zero|""
+yloorigin,s,h,"",,,origin for low y limit: average|mindata|maxdata|zero|""
+yhioffset,r,h,INDEF,,,offset from origin for high y limit
+ylooffset,r,h,INDEF,,,offset from origin for low y limit
+info1,s,h,etmp,,,info1: ttmp|hpwr|htmp|imcur|etmp|ztmp|zsct|xtmp|jtmp|.v.|.c.|r..|""
+r1,i,h,0,0,999,radius1: 0 - 999
+th1,i,h,0,0,359,theta1: 0 - 359
+z1,i,h,0,-99,999,z1: -99 - 999
+zone1,s,h,z4,,,zone1: z0 - z19|r
+addr1,i,h,0000,0000,5534,addr1: 0000 - 5534
+factor1,r,h,1,,,multiplicative factor for curve 1
+info2,s,h,etmp,,,info2: ttmp|hpwr|htmp|imcur|etmp|ztmp|zsct|xtmp|jtmp|.v.|.c.|r..|""
+r2,i,h,0,0,999,radius2: 0 - 999
+th2,i,h,0,0,359,theta2: 0 - 359
+z2,i,h,0,-99,999,z2: -99 - 999
+zone2,s,h,z4,,,zone2: z0 - z19|r
+addr2,i,h,0000,0000,5534,addr2: 0000 - 5534
+factor2,r,h,1,,,multiplicative factor for curve 2
+info3,s,h,etmp,,,info3: ttmp|hpwr|htmp|imcur|etmp|ztmp|zsct|xtmp|jtmp|.v.|.c.|r..|""
+r3,i,h,0,0,999,radius3: 0 - 999
+th3,i,h,0,0,359,theta3: 0 - 359
+z3,i,h,0,-99,999,z3: -99 - 999
+zone3,s,h,z4,,,zone3: z0 - z19|r
+addr3,i,h,0000,0000,5534,addr3: 0000 - 5534
+factor3,r,h,1,,,multiplicative factor for curve 3
+info4,s,h,etmp,,,info4: ttmp|hpwr|htmp|imcur|etmp|ztmp|zsct|xtmp|jtmp|.v.|.c.|r..|""
+r4,i,h,0,0,999,radius4: 0 - 999
+th4,i,h,0,0,359,theta4: 0 - 359
+z4,i,h,0,-99,999,z4: -99 - 999
+zone4,s,h,z4,,,zone4: z0 - z19|r
+addr4,i,h,0000,0000,5534,addr4: 0000 - 5534
+factor4,r,h,1,,,multiplicative factor for curve 4
+subsample,i,h,1,1,,subsample data by n values
+append,b,h,no,,,append to an existing plot?
+timeunit,s,h,hours,"hours|days",,time units for display: hours|days
+timezeropoint,i,h,INDEF,,,"beginning of time: INDEF, 0, yymmdd, hhmm"
+searchdir,s,h,"",,,search list of directories to find data files
+datadir,s,h,"uparm$",,,directory in which to write temporary files
+device,s,h,"stdgraph",,,output device
+debug,b,h,no,,,
+coord,*imcur,h,"",,,"Image cursor: [x y wcs] key [cmd]"
+mode,s,h,ql,,,
