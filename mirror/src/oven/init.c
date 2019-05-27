@@ -176,10 +176,10 @@ iamthepilot ()
 	return (user && !strcmp (user, "skip"));
 	return (user && !strcmp (user, "tom"));
 	*/
-	return (user && ( !strcmp (user, "pilot") ||
-		!strcmp (user, "pilot2" ||
-		!strcmp (user, "tom"
-		) ) );
+	return ( user && ( !strcmp (user, "pilot") ||
+		!strcmp (user, "pilot2") ||
+		!strcmp (user, "tom")
+		) );
 	// return 1;
 #endif
 }

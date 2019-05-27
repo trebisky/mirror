@@ -34,10 +34,17 @@ setenv mirror /iraf/iraf/extern/mirror/
 (Note that IRAFARCH would be linux64 to build 64bit binaries which you DON'T want to do.)
 This should go into your *login* environment to make sure everything gets propagated correctly.
 
+Now fix a problem in IRAF which I don't understand.
+This should not be necessary, but apparently it is.
+cd /iraf/iraf/unix/
+mkdir bin.generic
+cp bin.linux/f2c.h bin.generic/
+A kludge, but not worth debugging for this project.
+
 Do NOT use bash.  If you wanted to try using bash,
 you would need to make equivalent settings, but be aware that using
 bash DOES NOT WORK and this will be a huge waste of time.
- (( If you use bash, do the equivalent.
+ (( If you did use bash, you would do the equivalent.
     There is a /iraf/iraf/unix/hlib/irafuser.sh ))
 
 So now logout and log back in again, and double check the environment.
@@ -82,12 +89,6 @@ Now we fix a portability bug in /iraf/iraf/extern/mirror/src/oven/hgkey.x
 Now edit /iraf/iraf/extern/mirror/src/mkpkg and remove -lposix4 so that the line reads:
 $set    LIBS = "-lxtools -lc"
 This library is not needed and doesn't exist under linux.
-
-Now fix a problem in IRAF which I don't understand.  This should not be necessary.
-cd /iraf/iraf/unix/
-mkdir bin.generic
-cp bin.linux/f2c.h bin.generic/
-A kludge, but not worth debugging for this project.
 
 By default, only user "pilot" or "pilot2" can write to shared memory.
 You'll want to change that in /iraf/iraf/extern/mirror/src/oven/init.c at the bottom.
