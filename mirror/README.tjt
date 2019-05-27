@@ -119,3 +119,5 @@ src/oven/init.c
 
 *** NOTE that the fix above involving f2c.h is a fix to IRAF itself, not the mirror package.  ***
 
+After this I made some changes to shmalloc.c to give better error messages.
+
