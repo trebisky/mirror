@@ -90,3 +90,8 @@ ssun:
 	$set DIRS = "lib src"
 	!$(hlib)/mkfloat.csh ssun -d $(DIRS)
 	;
+linux:
+	$verbose off
+	$set DIRS = "lib src"
+	!$(hlib)/mkfloat.csh linux -d $(DIRS)
+	;

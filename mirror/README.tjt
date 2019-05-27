@@ -16,27 +16,38 @@ You will need the symbolic link /iraf to where you put the iraf top directory, w
 cache/
 imdirs/
 iraf/
+
 Then make a directory for the external "mirror" package, and cd to it.
 mkdir /iraf/iraf/extern/mirror
 cd /iraf/iraf/extern/mirror/
+
 Unpack your mirror.tar.gz here.
-Double check that /iraf/iraf/extern/mirror/mirror.cl exists.  That should confirm that you have the link correct and the software unpacked in the right place.
+Double check that /iraf/iraf/extern/mirror/mirror.cl exists.
+That should confirm that you have the link correct and the software unpacked in the right place.
 
 Now setup your login environment for IRAF development.  I use tcsh so in my ~/.cshrc I have:
 setenv iraf /iraf/iraf/
 setenv IRAFARCH linux
 source /iraf/iraf/unix/hlib/irafuser.csh
 setenv mirror /iraf/iraf/extern/mirror/
-If you use bash, do the equivalent. There is a
-/iraf/iraf/unix/hlib/irafuser.sh
+
 (Note that IRAFARCH would be linux64 to build 64bit binaries which you DON'T want to do.)
 This should go into your *login* environment to make sure everything gets propagated correctly.
+
+Do NOT use bash.  If you wanted to try using bash,
+you would need to make equivalent settings, but be aware that using
+bash DOES NOT WORK and this will be a huge waste of time.
+ (( If you use bash, do the equivalent.
+    There is a /iraf/iraf/unix/hlib/irafuser.sh ))
+
 So now logout and log back in again, and double check the environment.
 (Note that the trailing slash in directory names is important to IRAF.)
 
 The IRAF mkpkg system has multi-architecture support, so we must now set up for it.
 cd /iraf/iraf/extern/mirror/
 mkdir bin.linux
+XXX
+
 Append this to the mkpkg file:
 linux:
         $verbose off
