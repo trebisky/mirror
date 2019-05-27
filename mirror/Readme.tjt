@@ -4,3 +4,85 @@ was done on cholla (and trona) on and off for over a year after that before it
 was deemed wise to put this under Git.  At that point, I started by commiting
 the original dorado sources, then overlaid the work I had done up to that point
 which would in theory allow someone to get some idea of the changes made.
+
+======================================================================================================
+======================================================================================================
+== The following are instructions given to me by skip to get this running
+== on linux
+======================================================================================================
+======================================================================================================
+
+You will need the symbolic link /iraf to where you put the iraf top directory, which should contain:
+cache/
+imdirs/
+iraf/
+Then make a directory for the external "mirror" package, and cd to it.
+mkdir /iraf/iraf/extern/mirror
+cd /iraf/iraf/extern/mirror/
+Unpack your mirror.tar.gz here.
+Double check that /iraf/iraf/extern/mirror/mirror.cl exists.  That should confirm that you have the link correct and the software unpacked in the right place.
+
+Now setup your login environment for IRAF development.  I use tcsh so in my ~/.cshrc I have:
+setenv iraf /iraf/iraf/
+setenv IRAFARCH linux
+source /iraf/iraf/unix/hlib/irafuser.csh
+setenv mirror /iraf/iraf/extern/mirror/
+If you use bash, do the equivalent. There is a
+/iraf/iraf/unix/hlib/irafuser.sh
+(Note that IRAFARCH would be linux64 to build 64bit binaries which you DON'T want to do.)
+This should go into your *login* environment to make sure everything gets propagated correctly.
+So now logout and log back in again, and double check the environment.
+(Note that the trailing slash in directory names is important to IRAF.)
+
+The IRAF mkpkg system has multi-architecture support, so we must now set up for it.
+cd /iraf/iraf/extern/mirror/
+mkdir bin.linux
+Append this to the mkpkg file:
+linux:
+        $verbose off
+        $set DIRS = "lib src"
+        !$(hlib)/mkfloat.csh linux -d $(DIRS)
+        ;
+Now setup for your build architecture:
+mkpkg -p mirror linux
+(Note that you should always invoke mkpkg with the -p mirror switch.)
+This will gather up any binaries in current architecture and save them in the appropriate bin.* directory, change the bin/ symbolic link to the new architecture, and restore any previously saved binaries from the new bin.* directory.  There won't be any at this time, so you will get a message.  Do not change the bin/ symlink by hand!  Whoever last worked on the code screwed this up.  So you will probably find binaries in bin.generic/ at this time.  Delete them. bin.generic/ should always be empty.  The idea is to build each architecture one at a time, and then set the build architecture to generic for distribution. For purposes of this project, you can just leave the build architecture set to linux.
+
+Now we fix a portability bug in /iraf/iraf/extern/mirror/src/oven/hgkey.x
+77c77
+<       if (iand(sw , 1) != 0) {
+---
+>       if ((sw & 1) != 0) {
+83c83
+<       if (iand(sw , 2) != 0) {
+---
+>       if ((sw & 2) != 0) {
+
+Now edit /iraf/iraf/extern/mirror/src/mkpkg and remove -lposix4 so that the line reads:
+$set    LIBS = "-lxtools -lc"
+This library is not needed and doesn't exist under linux.
+
+Now fix a problem in IRAF which I don't understand.  This should not be necessary.
+cd /iraf/iraf/unix/
+mkdir bin.generic
+cp bin.linux/f2c.h bin.generic/
+A kludge, but not worth debugging for this project.
+
+By default, only user "pilot" or "pilot2" can write to shared memory.  You'll want to change that in
+/iraf/iraf/extern/mirror/src/oven/init.c
+at the bottom.  #define TEST and change the user name to "tom", not "skip".  Don't forget to remove the #define before deployment.
+
+Now you're ready to build the software.
+cd /iraf/iraf/extern/mirror/
+mkpkg -p mirror >& spool
+mkpkg -p mirror summary
+(The summary target looks in file "spool", and produces a non-verbose version of the build output.)
+If you're successful, you will have built /iraf/iraf/extern/mirror/bin.linux/x_mirror.e
+
+I think I remembered everything.
+
+======================================================================================================
+======================================================================================================
+== End of skips instructions to get this running on linux
+======================================================================================================
+======================================================================================================
