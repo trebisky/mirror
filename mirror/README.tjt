@@ -156,6 +156,9 @@ src/oven/mkpkg -- gets a line for fix_oven.c
 
 The new code in database.c is under the LINUX_ENDIAN conditional.
 
+Byte swapping for rotation speed is handled elsewhere.
+The ovenr task is coded entirely in SPP and is an independent entity.
+
 ======================================================================================================
 THE END
 ======================================================================================================
