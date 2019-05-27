@@ -74,13 +74,15 @@ begin
 
 	call flush (STDOUT)
 	call flush (STDERR)
-	if ((sw & 1) != 0) {
+#	if ((sw & 1) != 0) {
+	if (iand(sw,1) != 0) {
 	    call fseti (STDIN, F_IOMODE, IO_NORMAL)
 	    notraw = YES
 	}
 	call flush (STDOUT)
 	call flush (STDERR)
-	if ((sw & 2) != 0) {
+#	if ((sw & 2) != 0) {
+	if (iand(sw, 2) != 0) {
 	    call fseti (STDIN, F_IOMODE, IO_RAW+IO_NDELAY)
 	    notraw = NO
 	}

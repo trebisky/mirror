@@ -46,7 +46,6 @@ So now logout and log back in again, and double check the environment.
 The IRAF mkpkg system has multi-architecture support, so we must now set up for it.
 cd /iraf/iraf/extern/mirror/
 mkdir bin.linux
-XXX
 
 Append this to the mkpkg file:
 linux:
@@ -54,10 +53,21 @@ linux:
         $set DIRS = "lib src"
         !$(hlib)/mkfloat.csh linux -d $(DIRS)
         ;
+
 Now setup for your build architecture:
 mkpkg -p mirror linux
 (Note that you should always invoke mkpkg with the -p mirror switch.)
-This will gather up any binaries in current architecture and save them in the appropriate bin.* directory, change the bin/ symbolic link to the new architecture, and restore any previously saved binaries from the new bin.* directory.  There won't be any at this time, so you will get a message.  Do not change the bin/ symlink by hand!  Whoever last worked on the code screwed this up.  So you will probably find binaries in bin.generic/ at this time.  Delete them. bin.generic/ should always be empty.  The idea is to build each architecture one at a time, and then set the build architecture to generic for distribution. For purposes of this project, you can just leave the build architecture set to linux.
+
+This will gather up any binaries in current architecture and save them in the appropriate bin.* directory,
+change the bin/ symbolic link to the new architecture, and restore any previously saved binaries from the
+new bin.* directory.  There won't be any at this time, so you will get a message.
+Do not change the bin/ symlink by hand!
+Whoever last worked on the code screwed this up.
+So you will probably find binaries in bin.generic/ at this time.
+Delete them. bin.generic/ should always be empty.
+The idea is to build each architecture one at a time, and then set the build architecture
+to generic for distribution.
+For purposes of this project, you can just leave the build architecture set to linux.
 
 Now we fix a portability bug in /iraf/iraf/extern/mirror/src/oven/hgkey.x
 77c77
@@ -97,3 +107,8 @@ I think I remembered everything.
 == End of skips instructions to get this running on linux
 ======================================================================================================
 ======================================================================================================
+
+Files changed and added after the above:
+
+bin.linux
+mkpkg

@@ -9,7 +9,7 @@ update:
 	;
 
 relink:
-	$set	LIBS = "-lxtools -lc -lposix4"
+	$set	LIBS = "-lxtools -lc"
 	$update libpkg.a
 	$omake	x_mirror.x
 	$link	x_mirror.o libpkg.a $(LIBS) -o xx_mirror.e
