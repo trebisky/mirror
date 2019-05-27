@@ -2,6 +2,9 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
+// TJT
+#include <stdio.h>
+
 /* shmalloc - shared memory allocator
  */
 char	*
@@ -21,11 +24,17 @@ int	readonly;
 	if ((shmid = shmget (key, nbytes, shmflg1)) == -1) {
 	    if (!readonly)
 		perror ("shmget");
+	    // fprintf ( stderr, "TJT error: shmget: %d %d %d %d\n", nbytes, key, readonly, shmid );
+	    fprintf ( stderr, "shm - cannot get shared memory\n" );
+
 	    return ((char *)0);
 	}
+
+
 	if ((int)(shmptr = (char *)shmat (shmid, (char *)0, shmflg2)) == -1) {
 	    if (!readonly)
 		perror ("shmat");
+	    fprintf ( stderr, "shm - cannot attach shared memory\n" );
 	    return ((char *)0);
 	}
 	return (shmptr);

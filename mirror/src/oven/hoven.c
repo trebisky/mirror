@@ -185,6 +185,9 @@ int	*ncomp;
 	return (status);
 }
 
+/* What the heck is this for ?
+ * if we comment it out, we get errors.
+ */
 OOVEN (noven, ncomp)
 int	*noven;
 int	*ncomp;

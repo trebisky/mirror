@@ -168,9 +168,18 @@ iamthepilot ()
 	char	*getenv ();
 	char	*user = getenv ("USER");
 
-#ifndef	TEST
+#define	TEST_PILOT
+#ifndef	TEST_PILOT
 	return (user && (!strcmp (user, "pilot") || !strcmp (user, "pilot2")));
 #else
+	/*
 	return (user && !strcmp (user, "skip"));
+	return (user && !strcmp (user, "tom"));
+	*/
+	return (user && ( !strcmp (user, "pilot") ||
+		!strcmp (user, "pilot2" ||
+		!strcmp (user, "tom"
+		) ) );
+	// return 1;
 #endif
 }

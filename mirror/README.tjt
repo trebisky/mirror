@@ -89,9 +89,10 @@ mkdir bin.generic
 cp bin.linux/f2c.h bin.generic/
 A kludge, but not worth debugging for this project.
 
-By default, only user "pilot" or "pilot2" can write to shared memory.  You'll want to change that in
-/iraf/iraf/extern/mirror/src/oven/init.c
-at the bottom.  #define TEST and change the user name to "tom", not "skip".  Don't forget to remove the #define before deployment.
+By default, only user "pilot" or "pilot2" can write to shared memory.
+You'll want to change that in /iraf/iraf/extern/mirror/src/oven/init.c at the bottom.
+#define TEST and change the user name to "tom", not "skip".
+Don't forget to remove the #define before deployment.
 
 Now you're ready to build the software.
 cd /iraf/iraf/extern/mirror/
@@ -112,3 +113,9 @@ Files changed and added after the above:
 
 bin.linux
 mkpkg
+src/mkpkg
+src/oven/hgkey.x
+src/oven/init.c
+
+*** NOTE that the fix above involving f2c.h is a fix to IRAF itself, not the mirror package.  ***
+
