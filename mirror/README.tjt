@@ -146,6 +146,8 @@ ln -s Oven/mirror mirror
 
 You get some bonus items in Oven/utils
 
+When it comes time to update, "git pull" seems to do the job.
+
 ======================================================================================================
 
 The add the endian fixing byte swapping, the following files get messed with

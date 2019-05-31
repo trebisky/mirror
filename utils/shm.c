@@ -90,8 +90,8 @@ create_db ( void )
 int
 main ( int argc, char **argv )
 {
-	show_sizes ();
-	// create_db ();
+	// show_sizes ();
+	create_db ();
 }
 
 /* THE END */
