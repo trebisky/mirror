@@ -1,0 +1,9 @@
+fix_oven.c was how tom was going to do the database byte swapping.
+database_fix.c was how database.c was going to interface with this.
+
+Skip had a better idea, namely leaving database.c as it is and
+making changes to ipportrw.c, which is the way the code is,
+but I couldn't just delete these two files, even though they
+are not likely to ever be used.
+
+TJT  5/31/2019

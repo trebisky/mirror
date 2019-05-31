@@ -80,6 +80,164 @@ db_bpread_oven ()
 	db_pread_oven ();
 }
 
+#define LINUX_SWAP
+
+#ifdef LINUX_SWAP
+/* TJT 5-27-2019 - These are the revised routines to byte swap
+ * the big endian data coming from the onboard MC68030 machines.
+ */
+
+/* We never byteswap the data in the shared memory copy,
+ * because who knows who might be using it at the moment.
+ * We make a snapshot on write, and on read, we make the
+ * data good before copying it into place.
+ */
+static p_database tmp_params;
+static b_database tmp_biparams;
+static d_database tmp_data;
+static e_database tmp_errors;
+
+static int tmp_gong;
+
+/* db_pwrite_oven - database parameters write to  oven
+ */
+db_pwrite_oven ()
+{
+	int	ncomp, ip;
+
+	for (ncomp = 0; ncomp < N_COMP; ncomp++)
+	    if (Pdb->misc.vup[ncomp] && (ip=getovenip (globalp->noven,ncomp))) {
+		Pdb->misc.vnumber = ncomp;
+		bcopy ( Pdb, &tmp_params, sizeof(p_database) );
+		fix_param ( &tmp_params );
+		if (ipportwrite(ip,PORTWP,(char *)&tmp_params,sizeof(p_database)) == -1)
+		    ncompperror (globalp->noven, ncomp);
+	    }
+}
+
+/* db_bwrite_oven - database biparameters write to  oven
+ */
+db_bwrite_oven ()
+{
+	int	ncomp, ip;
+
+	for (ncomp = 0; ncomp < N_COMP; ncomp++)
+	    if (Pdb->misc.vup[ncomp] && (ip=getovenip (globalp->noven,ncomp))) {
+		bcopy ( Bdb, &tmp_biparams, sizeof(b_database) );
+		fix_biparam ( &tmp_biparams );
+		if (ipportwrite(ip,PORTWB,(char *)&tmp_biparams,sizeof(b_database)) == -1)
+		    ncompperror (globalp->noven, ncomp);
+	    }
+}
+
+/* db_pread_oven - database parameters read to  oven
+ */
+db_pread_oven ()
+{
+	int	ip;
+
+	if (ip = getovenip (globalp->noven, globalp->ncomp)) {
+	    if (ipportread(ip,PORTRP,(char *)&tmp_params,sizeof(p_database)) == -1)
+		ncompperror (globalp->noven, globalp->ncomp);
+	    fix_param ( &tmp_params );
+	    bcopy ( &tmp_params, Pdb, sizeof(p_database) );
+	}
+}
+
+/* db_bread_oven - database biparameters read to  oven
+ */
+db_bread_oven ()
+{
+	int	ip;
+
+	if (ip = getovenip (globalp->noven, globalp->ncomp)) {
+	    if (ipportread(ip,PORTRB,(char *)&tmp_biparams,sizeof(b_database)) == -1)
+		ncompperror (globalp->noven, globalp->ncomp);
+	    fix_biparam ( &tmp_biparams );
+	    bcopy ( &tmp_biparams, Bdb, sizeof(b_database) );
+	}
+}
+
+/* db_dread_oven - database data read from  oven
+ */
+db_dread_oven ()
+{
+	int	ip;
+
+	if (!Pdb->misc.vup[globalp->ncomp])
+	    return (NO);
+	if (ip = getovenip (globalp->noven, globalp->ncomp)) {
+	    if (ipportread(ip,PORTRB,(char *)&tmp_biparams,sizeof(b_database)) == -1)
+		ncompperror (globalp->noven, globalp->ncomp);
+	    fix_biparam ( &tmp_biparams );
+	    bcopy ( &tmp_biparams, Bdb, sizeof(b_database) );
+
+	    if (ipportread(ip,PORTRD,(char *)&tmp_params,sizeof(d_database)) == -1)
+		ncompperror (globalp->noven, globalp->ncomp);
+	    fix_param ( &tmp_params );
+	    bcopy ( &tmp_params, Pdb, sizeof(p_database) );
+	} else {
+	    return (NO);
+	}
+	return (YES);
+}
+
+/* db_eread_oven - database error read from  oven
+ */
+db_eread_oven ()
+{
+	int	ip;
+
+	if (!Pdb->misc.vup[globalp->ncomp])
+	    return (NO);
+	if (ip = getovenip (globalp->noven, globalp->ncomp)) {
+	    if (ipportread(ip,PORTER,(char *)&tmp_errors,sizeof(e_database)) == -1)
+		ncompperror (globalp->noven, globalp->ncomp);
+	    fix_errors ( &tmp_errors );
+	    bcopy ( &tmp_errors, Edb, sizeof(e_database) );
+	} else {
+	    return (NO);
+	}
+	return (YES);
+}
+
+/* db_gread_oven - database gong read from  oven
+ */
+db_gread_oven ()
+{
+	int	ip;
+	int	ncomp;
+	int	gong;
+	int	maxgong = 0;
+	int	status;
+	int	result = 0;
+
+	for (ncomp = 0; ncomp < N_COMP; ncomp++) {
+	    if (!Pdb->misc.vup[ncomp])
+		continue;
+	    globalp->ncomp = ncomp;
+	    if (ip = getovenip (globalp->noven, globalp->ncomp)) {
+		status = ipportread (ip, PORTGN, (char *)&tmp_gong, sizeof(int));
+		if (status == -1) {
+		    gong = 0;
+		    timeoutreport ();
+		}
+		gong = fix_gong ( &tmp_gong );
+	    } else {
+		continue;
+	    }
+	    maxgong = MAX (maxgong, gong);
+	    result += (status != 0);
+	}
+	return (result + maxgong);
+}
+
+#else /* LINUX_SWAP */
+/* TJT 5-27-2019 - These are the original routines
+ * from pre-linux days when no byte swapping was required.
+ * (MC68030 and Sparc are both big-endian)
+ */
+
 /* db_pwrite_oven - database parameters write to  oven
  */
 db_pwrite_oven ()
@@ -196,6 +354,8 @@ db_gread_oven ()
 	}
 	return (result + maxgong);
 }
+
+#endif /* LINUX_SWAP */
 
 /* do_ovenp - setup listener for parameter requests
  */

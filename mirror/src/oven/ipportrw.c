@@ -13,10 +13,10 @@
 
 /* ipportwrite - write to   an IP port.
  */
-ipportwrite (ip, port, buffer, nbytes)
+ipportwrite (ip, port, buf, nbytes)
 int	ip;
 int	port;
-char	*buffer;
+char	*buf;
 int	nbytes;
 {
 	struct	sockaddr_in	sockaddr;
@@ -25,6 +25,8 @@ int	nbytes;
 	int	s;
 	int	nxfer;
 	int	n;
+	char	*buffer;
+	char	*malloc();
 
 	if ((s = socket (AF_INET, SOCK_STREAM, 0)) < 0) {
 	    perror ("socket");
@@ -40,13 +42,33 @@ int	nbytes;
 /*	    perror ("connect");						*/
 	    return (-1);
 	}
+	if (htonl(1) == 1) {
+	    buffer = buf;
+	} else {
+	    if ((buffer = malloc (nbytes)) == 0) {
+		close (s);
+		return (-1);
+	    }
+	    long *lbuf = (long *)buf;
+	    long *lbuffer = (long *)buffer;
+	    int nlongs = nbytes/sizeof(long);
+	    /* swap and copy quickly and in atomic 4 byte pieces */
+	    for (n = 0; n < nlongs; n++) {
+		long temp = *lbuf++;
+	        *lbuffer++ = htonl(temp);
+	    }
+	}
 	for (n = 0; n < nbytes; n += nxfer) {
 	    if ((nxfer = write (s, buffer+n, MIN (MAXNBYTES, nbytes-n))) < 0) {
 		perror ("write");
+		if (htonl(1) != 1)
+		    free (buffer);
 		close (s);
 		return (nxfer);
 	    }
 	}
+	if (htonl(1) != 1)
+	    free (buffer);
 	close (s);
 	return (0);
 }
@@ -99,7 +121,18 @@ int	nbytes;
 		return (-1);
 	    }
 	}
-	bcopy (buffer, buf, nbytes);
+	if (ntohl(1) == 1) {
+	    bcopy (buffer, buf, nbytes);
+	} else {
+	    long *lbuffer = (long *)buffer;
+	    long *lbuf = (long *)buf;
+	    int nlongs = nbytes/sizeof(long);
+	    /* swap and copy quickly and in atomic 4 byte pieces */
+	    for (n = 0; n < nlongs; n++) {
+		long temp = *lbuffer++;
+	        *lbuf++ = ntohl(temp);
+	    }
+	}
 	free (buffer);
 	close (s);
 	return (0);
@@ -147,6 +180,7 @@ int	nbytes;
 	unsigned long	ip;
 	int	iip;
 	int	oven, comp;
+	char	*malloc();
 
 	if ((s = socket (AF_INET, SOCK_STREAM, 0)) < 0)
 	    return (-1);
@@ -175,13 +209,32 @@ int	nbytes;
 	    for (oven = 0; oven < noven; oven++) {
 		for (comp = 0; comp < ncomp; comp++) {
 		    if (iip == getovenip (oven, comp)) {
-			if (buffer = buf[oven]) {
+			if (buf[oven]) {
+
+			    if (htonl(1) == 1) {
+				buffer = buf[oven];
+			    } else {
+				if ((buffer = malloc (nbytes)) == 0) {
+				    break;
+				}
+				long *lbuf = (long *)buf[oven];
+				long *lbuffer = (long *)buffer;
+				int nlongs = nbytes/sizeof(long);
+				/* swap and copy quickly and in atomic 4 byte pieces */
+				for (n = 0; n < nlongs; n++) {
+				    long temp = *lbuf++;
+				    *lbuffer++ = htonl(temp);
+				}
+			    }
+
 			    for (n = 0; n < nbytes; n += nxfer) {
 				if ((nxfer = write(r, buffer+n,
 				  MIN (MAXNBYTES, nbytes-n))) < 0)
 				    break;
 			    }
 			}
+			if (htonl(1) != 1)
+			    free (buffer);
 			break;
 		    }
 		}
