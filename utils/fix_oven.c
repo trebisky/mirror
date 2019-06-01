@@ -119,7 +119,7 @@ fix_param ( p_database *db )
 	LOOP ( i, N_COMP ) {
 	    Iswap ( db->adc[i].voltage.lower );
 	    Iswap ( db->adc[i].voltage.upper );
-	    LOOP ( j, N_PANEL) {
+	    LOOP ( j, N_PANEL/N_COMP ) {
 		Fswap ( db->adc[i].panel[j].current.lower );
 		Fswap ( db->adc[i].panel[j].current.upper );
 		LOOP ( k, N_FASE) {
