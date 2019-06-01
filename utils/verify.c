@@ -2,6 +2,9 @@
  * Experimen utility to check byte swapping in
  * binary oven database files.
  *
+ * This proved that fix_oven.c is unnecessary and that
+ * just swapping an array of longs would do the job.
+ *
  * Tom Trebisky 6-1-2019
  */
 

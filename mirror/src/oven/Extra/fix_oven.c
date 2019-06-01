@@ -8,9 +8,9 @@
 
 #include "oven.h"
 
-static void swap4 ( char * );
+// void swap4 ( char * );
 
-static void
+void
 swap4 ( char *item )
 {
         int tmp;
@@ -119,7 +119,7 @@ fix_param ( p_database *db )
 	LOOP ( i, N_COMP ) {
 	    Iswap ( db->adc[i].voltage.lower );
 	    Iswap ( db->adc[i].voltage.upper );
-	    LOOP ( j, N_PANEL) {
+	    LOOP ( j, N_PANEL/N_COMP ) {
 		Fswap ( db->adc[i].panel[j].current.lower );
 		Fswap ( db->adc[i].panel[j].current.upper );
 		LOOP ( k, N_FASE) {
@@ -372,17 +372,11 @@ fix_gong ( int *buf )
 	return buf[0];
 }
 
-/* This is not needed, at least not here anyways.
- * Oven rotation speed is obtained by the ovenr task, which is
- * independent and written entirely in SPP.
- */
-#ifdef notdef
 void
 fix_rspeed ( int *buf )
 {
 	Iswap ( buf[0] );
 	Iswap ( buf[1] );
 }
-#endif
 
 /* THE END */
