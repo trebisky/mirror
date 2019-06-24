@@ -253,9 +253,29 @@ static	unsigned char mapbit[N_FASE][N_ELEMENT] = {
 #define	FASE__		(pfase++, ifase++, dfase++, fase++)
 #define	ELEMENT__	(pelement++, ielement++, delement++, element++)
 
-#define	CONNECT(x)	( ((x)-1) == db->parameter.misc.vnumber )
-#define	IS_STALE(x)	( (db->data.misc.uclock - (x)) > 10 )
-#define	IS_STALEA(x)	( (db->data.misc.uclock - (x)) > 120 )
+/* Introduced by tjt 6-24-2019
+ * We wouldn't need to fiddle with this if our clocks were synchronized.
+ * but at this time, we see the following:
+ *
+ *  [tom@linuxpilot ~]$ date
+ *  Mon 24 Jun 2019 01:17:51 PM MST
+ *  crater$ date
+ *  Mon Jun 24 13:10:14 MST 2019
+ *
+ * In other words, the V computers (which are presumable synced to crater
+ *  are almost 8 minutes behind the real world (the linux machine runs NTP
+ *  and is on the money.).  So data received -right now- looks 8 minutes
+ *  stale.
+ */
+// #define STALE_DELTA  120
+// #define STALE_DELTA_10       10
+
+#define STALE_DELTA     (60*10)
+#define STALE_DELTA_10  (60*10)
+
+#define CONNECT(x)      ( ((x)-1) == db->parameter.misc.vnumber )
+#define IS_STALE(x)     ( (db->data.misc.uclock - (x)) > STALE_DELTA_10 )
+#define IS_STALEA(x)    ( (db->data.misc.uclock - (x)) > STALE_DELTA )
 #define	CONFIG		( db->parameter.misc.config )
 
 static	int configt[N_FASE][N_ELEMENT] = {		/* config time	*/

@@ -21,20 +21,25 @@ int	readonly;
 	int	shmid;
 	char	*shmptr;
 
+	/* ovenp and ovenb scan through all possible ovens
+	 * looking for databases (readonly), so we want to
+	 * be silent in those cases.
+	 */
 	if ((shmid = shmget (key, nbytes, shmflg1)) == -1) {
-	    if (!readonly)
+	    if (!readonly) {
 		perror ("shmget");
-	    // fprintf ( stderr, "TJT error: shmget: %d %d %d %d\n", nbytes, key, readonly, shmid );
-	    fprintf ( stderr, "shm - cannot get shared memory\n" );
-
+		// fprintf ( stderr, "TJT error: shmget: %d %d %d %d\n", nbytes, key, readonly, shmid );
+		fprintf ( stderr, "shm - cannot get shared memory (key=%x, flag=%x)\n", key, shmflg1 );
+	    }
 	    return ((char *)0);
 	}
 
 
 	if ((int)(shmptr = (char *)shmat (shmid, (char *)0, shmflg2)) == -1) {
-	    if (!readonly)
+	    if (!readonly) {
 		perror ("shmat");
-	    fprintf ( stderr, "shm - cannot attach shared memory\n" );
+		fprintf ( stderr, "shm - cannot attach shared memory\n" );
+	    }
 	    return ((char *)0);
 	}
 	return (shmptr);

@@ -13,7 +13,7 @@ database	*db;
 	BOOL	allstale;
 
 	time (&now);
-	allstale = (now - ddb->misc.uclock) > 120;
+	allstale = (now - ddb->misc.uclock) > STALE_DELTA;
 
 	time (&ddb->misc.uclock);
 	for (dcu = 0; dcu < N_DCU; DCU__) {
